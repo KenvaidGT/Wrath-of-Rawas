@@ -11,3 +11,6 @@ func _process(delta):
 func on_start_pressed():
 	pass
 	
+
+func _on_exit_pressed():
+	get_tree().quit()
