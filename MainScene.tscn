@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bffs5kc3pafkj"]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_rqmop"]
+[ext_resource type="Texture2D" uid="uid://dcbbswlqg06bs" path="res://menu_backgrounds/main_menu_background_Low_quality.png" id="2_ha65j"]
+[ext_resource type="Texture2D" uid="uid://cdevj1y2q06e3" path="res://text/Wrath-of-Rawas-7-16-2024.png" id="3_lcnxo"]
+[ext_resource type="PackedScene" uid="uid://ccxsh1eiwpykx" path="res://Main_menu/MainMenu.tscn" id="4_7h5c0"]
+
+[node name="MainScene" type="Node"]
+script = ExtResource("1_rqmop")
+
+[node name="MainMenuBackgroundLowQuality" type="Sprite2D" parent="."]
+position = Vector2(584, 329)
+scale = Vector2(0.571925, 0.560764)
+texture = ExtResource("2_ha65j")
+
+[node name="Wrath-of-rawas-7-16-2024" type="Sprite2D" parent="."]
+position = Vector2(582.499, 106.5)
+scale = Vector2(1.08106, 1.00385)
+texture = ExtResource("3_lcnxo")
+
+[node name="MainMenu" parent="." instance=ExtResource("4_7h5c0")]
+offset_left = -27.0
+offset_top = 61.0
+offset_right = -27.0
+offset_bottom = 61.0
