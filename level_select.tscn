@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwqddhjpdmu0h"]
+
+[ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_v1au3"]
+[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://text/Level-one-7-16-2024.png" id="2_iyxqn"]
+
+[node name="Level_select" type="Node2D"]
+
+[node name="LevSel" type="Sprite2D" parent="."]
+position = Vector2(573.5, 322)
+scale = Vector2(0.571925, 0.564236)
+texture = ExtResource("1_v1au3")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 322.0
+offset_top = 238.0
+offset_right = 818.0
+offset_bottom = 401.0
+texture_normal = ExtResource("2_iyxqn")
+ignore_texture_size = true
+stretch_mode = 0

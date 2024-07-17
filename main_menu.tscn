@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://b712atbfwrmb0"]
+
+[ext_resource type="Texture2D" uid="uid://dcbbswlqg06bs" path="res://menu_backgrounds/main_menu_background_Low_quality.png" id="1_0mylj"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_5dt0f"]
+[ext_resource type="Texture2D" uid="uid://d3c1uqklxgvq8" path="res://text/Start-7-16-2024.png" id="2_pxm7s"]
+[ext_resource type="Texture2D" uid="uid://dgywkr8ndoh8u" path="res://text/Settings-7-16-2024.png" id="3_x0lvb"]
+[ext_resource type="Texture2D" uid="uid://c5ljcxymqayd8" path="res://text/exit-7-16-2024.png" id="4_1otld"]
+[ext_resource type="Texture2D" uid="uid://cdevj1y2q06e3" path="res://text/Wrath-of-Rawas-7-16-2024.png" id="5_urm22"]
+
+[node name="main menu" type="Node2D"]
+script = ExtResource("1_5dt0f")
+
+[node name="MainMenuBackgroundLowQuality" type="Sprite2D" parent="."]
+position = Vector2(578, 324)
+scale = Vector2(0.571925, 0.560764)
+texture = ExtResource("1_0mylj")
+
+[node name="buttons" type="Node2D" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="buttons"]
+offset_left = -20.0
+offset_top = 205.0
+offset_right = 351.0
+offset_bottom = 342.0
+texture_normal = ExtResource("2_pxm7s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="buttons"]
+offset_left = -22.0
+offset_top = 322.0
+offset_right = 389.0
+offset_bottom = 462.0
+texture_normal = ExtResource("3_x0lvb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="buttons"]
+offset_left = -8.0
+offset_top = 449.0
+offset_right = 281.0
+offset_bottom = 576.0
+texture_normal = ExtResource("4_1otld")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Wrath-of-rawas-7-16-2024" type="Sprite2D" parent="."]
+position = Vector2(548, 97)
+scale = Vector2(1.10938, 1.15385)
+texture = ExtResource("5_urm22")
+
+[connection signal="pressed" from="buttons/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="buttons/TextureButton3" to="." method="_on_texture_button_3_pressed"]
