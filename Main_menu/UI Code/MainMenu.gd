@@ -9,7 +9,8 @@ func _ready():
 
 func on_start_pressed():
 	$MainMenu.queue_free()
-	var game_scene = load("res://Main_menu/level_select.tscn").instantiate()
+	var game_scene = load("res://Main_menu/UI Scenes/LevelSelectScene.tscn").instantiate()
+	
 	add_child(game_scene)
 	
 func on_quit_pressed():
