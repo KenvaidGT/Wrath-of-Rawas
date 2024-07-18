@@ -13,7 +13,7 @@ func on_settings_pressed():
 	get_tree().change_scene_to_file("res://Main_menu/UI Scenes/SettingsScene.tscn")
 
 func on_start_pressed():
-	get_tree().change_scene_to_file("res://Main_menu/UI Scenes/LevelSelectScene.tscn")
+	get_tree().change_scene_to_file("res://UI/game_ui.tscn")
 	
 func on_quit_pressed():
 	get_tree().quit()
