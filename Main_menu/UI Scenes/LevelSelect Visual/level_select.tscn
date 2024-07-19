@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://513nbpe53ujy"]
+
+[ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_jhaj8"]
+[ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://UI/Green/Default/button_rectangle_border.png" id="2_5l0je"]
+[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://text/Level-one-7-16-2024.png" id="3_3v5bq"]
+
+[node name="Level_select" type="Node2D"]
+
+[node name="LevSel" type="Sprite2D" parent="."]
+position = Vector2(578, 326)
+scale = Vector2(0.571925, 0.564236)
+texture = ExtResource("1_jhaj8")
+
+[node name="Exit" type="TextureButton" parent="."]
+offset_left = 389.0
+offset_top = 498.0
+offset_right = 821.0
+offset_bottom = 613.0
+texture_normal = ExtResource("2_5l0je")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Exit"]
+layout_mode = 1
+offset_left = 152.0
+offset_top = 7.0
+offset_right = 181.0
+offset_bottom = 30.0
+scale = Vector2(4, 4)
+text = "Exit"
+
+[node name="Level1" type="TextureButton" parent="."]
+offset_left = 64.0
+offset_top = 70.0
+offset_right = 279.0
+offset_bottom = 236.0
+texture_normal = ExtResource("3_3v5bq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level2" type="TextureButton" parent="."]
+offset_left = 300.0
+offset_top = 70.0
+offset_right = 515.0
+offset_bottom = 236.0
+texture_normal = ExtResource("3_3v5bq")
+texture_pressed = ExtResource("3_3v5bq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level3" type="TextureButton" parent="."]
+offset_left = 550.0
+offset_top = 70.0
+offset_right = 765.0
+offset_bottom = 236.0
+texture_normal = ExtResource("3_3v5bq")
+texture_pressed = ExtResource("3_3v5bq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level4" type="TextureButton" parent="."]
+offset_left = 800.0
+offset_top = 70.0
+offset_right = 1015.0
+offset_bottom = 236.0
+texture_normal = ExtResource("3_3v5bq")
+texture_pressed = ExtResource("3_3v5bq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Exit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

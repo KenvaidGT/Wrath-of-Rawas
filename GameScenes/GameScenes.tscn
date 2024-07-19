@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://pe0xldr6pfen"]
+
+[node name="GameScenes" type="Node3D"]
+
+[node name="Map1" type="Node3D" parent="."]
+
+[node name="Map2" type="Node3D" parent="."]
+
+[node name="Map3" type="Node3D" parent="."]
