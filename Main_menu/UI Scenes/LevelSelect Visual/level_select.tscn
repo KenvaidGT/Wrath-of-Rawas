@@ -70,5 +70,5 @@ texture_pressed = ExtResource("3_3v5bq")
 ignore_texture_size = true
 stretch_mode = 0
 
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
