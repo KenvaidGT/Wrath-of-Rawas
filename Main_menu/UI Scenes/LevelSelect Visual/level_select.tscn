@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://513nbpe53ujy"]
+[gd_scene load_steps=5 format=3 uid="uid://513nbpe53ujy"]
 
+[ext_resource type="Script" path="res://Main_menu/UI Scenes/LevelSelect Visual/level_select.gd" id="1_iq1rk"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_jhaj8"]
 [ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://UI/Green/Default/button_rectangle_border.png" id="2_5l0je"]
 [ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://text/Level-one-7-16-2024.png" id="3_3v5bq"]
 
 [node name="Level_select" type="Node2D"]
+script = ExtResource("1_iq1rk")
 
 [node name="LevSel" type="Sprite2D" parent="."]
 position = Vector2(578, 326)
@@ -68,5 +70,5 @@ texture_pressed = ExtResource("3_3v5bq")
 ignore_texture_size = true
 stretch_mode = 0
 
-[connection signal="pressed" from="Exit" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_texture_button_pressed"]
