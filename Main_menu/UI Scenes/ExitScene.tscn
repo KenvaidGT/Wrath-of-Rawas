@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://df28kl4lg3so0"]
+[gd_scene load_steps=4 format=3 uid="uid://cldxtitxxh6wm"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/ExitScene.gd" id="1_00lny"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="2_87vek"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://edb3gchimcpq"]
+[gd_scene load_steps=3 format=3 uid="uid://bgiov1ppxwwmh"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/SettingsScene.gd" id="1_nhtkc"]
 [ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://UI/Green/Default/button_rectangle_border.png" id="2_00q4r"]
