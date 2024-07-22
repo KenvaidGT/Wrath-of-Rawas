@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwqddhjpdmu0h"]
+[gd_scene load_steps=4 format=3 uid="uid://bt37qp3o78wes"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/LevelSelectCode.gd" id="1_wl4mk"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="2_2h6gj"]
@@ -30,5 +30,5 @@ offset_bottom = 30.0
 scale = Vector2(4, 4)
 text = "Exit"
 
-[connection signal="pressed" from="Exit" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_texture_button_pressed"]

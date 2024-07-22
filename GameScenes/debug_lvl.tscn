@@ -1,3 +1,33 @@
-[gd_scene format=3 uid="uid://bi17srvxm6eat"]
+[gd_scene load_steps=5 format=3 uid="uid://4g75un8wa4in"]
+
+[ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://UI/wave_ui.tscn" id="1_elrgw"]
+[ext_resource type="PackedScene" uid="uid://dnr2gywg0vfxr" path="res://UI/game_ui.tscn" id="2_8q1nm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h0vqt"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sg2ih"]
+size = Vector3(10, 0.5, 10)
 
 [node name="Node3D" type="Node3D"]
+
+[node name="wave_UI" parent="." instance=ExtResource("1_elrgw")]
+metadata/_edit_use_anchors_ = true
+
+[node name="Game_UI" parent="." instance=ExtResource("2_8q1nm")]
+metadata/_edit_use_anchors_ = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, -4.81839, 1.94779, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.987688, 0.156434, 0, -0.156434, 0.987688, -0.141509, 3.57829, 4.96821)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_h0vqt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_sg2ih")

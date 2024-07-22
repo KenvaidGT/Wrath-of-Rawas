@@ -29,3 +29,5 @@ offset_right = 181.0
 offset_bottom = 30.0
 scale = Vector2(4, 4)
 text = "Exit"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
