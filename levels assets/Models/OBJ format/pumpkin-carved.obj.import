@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://p7a7bcb0u3k5"
+path="res://.godot/imported/pumpkin-carved.obj-19a08376b0b8e98e1fc4ccadbe03c944.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pumpkin-carved.obj-19a08376b0b8e98e1fc4ccadbe03c944.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/pumpkin-carved.obj"
+dest_files=["res://.godot/imported/pumpkin-carved.obj-19a08376b0b8e98e1fc4ccadbe03c944.mesh", "res://.godot/imported/pumpkin-carved.obj-19a08376b0b8e98e1fc4ccadbe03c944.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

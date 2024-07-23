@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bn7v2cnm5er8l"
+path="res://.godot/imported/brick-wall-curve.obj-e87dc3adce46ddacc20c9e5cbc8eb18d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/brick-wall-curve.obj-e87dc3adce46ddacc20c9e5cbc8eb18d.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/brick-wall-curve.obj"
+dest_files=["res://.godot/imported/brick-wall-curve.obj-e87dc3adce46ddacc20c9e5cbc8eb18d.mesh", "res://.godot/imported/brick-wall-curve.obj-e87dc3adce46ddacc20c9e5cbc8eb18d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

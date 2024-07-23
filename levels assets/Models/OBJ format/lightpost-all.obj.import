@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8ny5mnnlkq5s"
+path="res://.godot/imported/lightpost-all.obj-4684896b6c4f81422f548b3e00801fbb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lightpost-all.obj-4684896b6c4f81422f548b3e00801fbb.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/lightpost-all.obj"
+dest_files=["res://.godot/imported/lightpost-all.obj-4684896b6c4f81422f548b3e00801fbb.mesh", "res://.godot/imported/lightpost-all.obj-4684896b6c4f81422f548b3e00801fbb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnv2etwapbhso"
+path="res://.godot/imported/candle-multiple.obj-581c7f56e17ccb4c372301f7eb13294a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/candle-multiple.obj-581c7f56e17ccb4c372301f7eb13294a.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/candle-multiple.obj"
+dest_files=["res://.godot/imported/candle-multiple.obj-581c7f56e17ccb4c372301f7eb13294a.mesh", "res://.godot/imported/candle-multiple.obj-581c7f56e17ccb4c372301f7eb13294a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

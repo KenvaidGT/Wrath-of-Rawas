@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cyagd6ddpd5tv"
+path="res://.godot/imported/bench-damaged.obj-1caaa633d73aa72ce3bd88b24f29a7bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bench-damaged.obj-1caaa633d73aa72ce3bd88b24f29a7bd.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/bench-damaged.obj"
+dest_files=["res://.godot/imported/bench-damaged.obj-1caaa633d73aa72ce3bd88b24f29a7bd.mesh", "res://.godot/imported/bench-damaged.obj-1caaa633d73aa72ce3bd88b24f29a7bd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

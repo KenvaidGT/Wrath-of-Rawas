@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo4dxm06v3b70"
+path="res://.godot/imported/brick-wall-curve-small.obj-f862a1b31ab636f0462b36b57219d7db.mesh"
+
+[deps]
+
+files=["res://.godot/imported/brick-wall-curve-small.obj-f862a1b31ab636f0462b36b57219d7db.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/brick-wall-curve-small.obj"
+dest_files=["res://.godot/imported/brick-wall-curve-small.obj-f862a1b31ab636f0462b36b57219d7db.mesh", "res://.godot/imported/brick-wall-curve-small.obj-f862a1b31ab636f0462b36b57219d7db.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

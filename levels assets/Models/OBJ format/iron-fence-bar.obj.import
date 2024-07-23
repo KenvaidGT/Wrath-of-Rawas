@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://h2ndbetmfbcp"
+path="res://.godot/imported/iron-fence-bar.obj-a2f2f15ace48b022241d239480f9feb4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/iron-fence-bar.obj-a2f2f15ace48b022241d239480f9feb4.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/iron-fence-bar.obj"
+dest_files=["res://.godot/imported/iron-fence-bar.obj-a2f2f15ace48b022241d239480f9feb4.mesh", "res://.godot/imported/iron-fence-bar.obj-a2f2f15ace48b022241d239480f9feb4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
