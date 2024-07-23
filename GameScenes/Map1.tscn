@@ -30,17 +30,20 @@ transform = Transform3D(1, 0, 0, 0, 0.987688, 0.156434, 0, -0.156434, 0.987688, 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0171044, 0)
 mesh = SubResource("BoxMesh_dlqro")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_vdybb")
 
+[node name="Enemy" parent="." instance=ExtResource("4_wkb5b")]
+
 [node name="Enemies" type="Node" parent="."]
 
-[node name="Enemy" parent="Enemies" instance=ExtResource("4_wkb5b")]
-transform = Transform3D(0.6378, 0, -0.770202, 0, 1, 0, 0.770202, 0, 0.6378, 0, 2.1268, 0)
+[node name="Spawner" type="Timer" parent="Enemies"]
 
 [connection signal="pressed" from="Game_UI/M/VB/Start" to="." method="_on_start_pressed"]
+[connection signal="timeout" from="Enemies/Spawner" to="." method="_on_spawner_timeout"]
 
 [editable path="wave_UI"]
 [editable path="Game_UI"]

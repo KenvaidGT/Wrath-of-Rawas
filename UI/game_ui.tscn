@@ -221,6 +221,6 @@ text = "Wall"
 [connection signal="pressed" from="M/VB2/Tower2" to="." method="_on_tower_2_pressed"]
 [connection signal="pressed" from="M/VB2/Tower3" to="." method="_on_tower_3_pressed"]
 [connection signal="pressed" from="M/VB2/Enemy_+1" to="." method="_on_enemy_1_pressed"]
-[connection signal="pressed" from="M/VB2/Delet_tower" to="." method="_on_delet_turret_pressed"]
 [connection signal="pressed" from="M/VB2/Delet_tower" to="." method="_on_delet_tower_pressed"]
+[connection signal="pressed" from="M/VB2/Delet_tower" to="." method="_on_delet_turret_pressed"]
 [connection signal="pressed" from="M/VB2/Wall" to="." method="_on_wall_pressed"]

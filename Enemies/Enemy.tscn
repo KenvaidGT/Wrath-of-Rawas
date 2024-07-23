@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cgxg570a2xsw8"]
+[gd_scene load_steps=4 format=3 uid="uid://cgxg570a2xsw8"]
+
+[ext_resource type="Script" path="res://Enemies/Enemy.gd" id="1_84avk"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_14upd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mi122"]
 
 [node name="Enemy" type="Node3D"]
+script = ExtResource("1_84avk")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 
