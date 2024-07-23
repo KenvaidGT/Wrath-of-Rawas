@@ -45,6 +45,7 @@ texture_normal = ExtResource("1_305k6")
 
 [node name="VB3" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(60, 150)
+layout_mode = 0
 offset_right = 64.0
 offset_bottom = 648.0
 size_flags_horizontal = 0
