@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jhuub11xt6ti"
+path="res://.godot/imported/ground_pathCross.obj-1d15e41127f579bbe7d3a2a68e514e2f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathCross.obj-1d15e41127f579bbe7d3a2a68e514e2f.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/ground_pathCross.obj"
+dest_files=["res://.godot/imported/ground_pathCross.obj-1d15e41127f579bbe7d3a2a68e514e2f.mesh", "res://.godot/imported/ground_pathCross.obj-1d15e41127f579bbe7d3a2a68e514e2f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8d3gv1q6r65q"
+path="res://.godot/imported/tent_detailedClosed.obj-6ffee9b967f5d440f350f06cd663cb7c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent_detailedClosed.obj-6ffee9b967f5d440f350f06cd663cb7c.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/tent_detailedClosed.obj"
+dest_files=["res://.godot/imported/tent_detailedClosed.obj-6ffee9b967f5d440f350f06cd663cb7c.mesh", "res://.godot/imported/tent_detailedClosed.obj-6ffee9b967f5d440f350f06cd663cb7c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bp5g05pml3udg"
+path="res://.godot/imported/rock_tallC.obj-0c3ebfb5bced83d761636cd62a5e5a0f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_tallC.obj-0c3ebfb5bced83d761636cd62a5e5a0f.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/rock_tallC.obj"
+dest_files=["res://.godot/imported/rock_tallC.obj-0c3ebfb5bced83d761636cd62a5e5a0f.mesh", "res://.godot/imported/rock_tallC.obj-0c3ebfb5bced83d761636cd62a5e5a0f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

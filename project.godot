@@ -14,3 +14,7 @@ config/name="Wrath-of-rawas"
 run/main_scene="res://Main_menu/UI Scenes/MainMenu Visual/MainScene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[filesystem]
+
+import/fbx/enabled=false

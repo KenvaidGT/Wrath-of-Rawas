@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/MainMenu.gd" id="1_35muo"]
 [ext_resource type="Texture2D" uid="uid://dcbbswlqg06bs" path="res://menu_backgrounds/main_menu_background_Low_quality.png" id="2_lb78q"]
-[ext_resource type="Texture2D" uid="uid://cdevj1y2q06e3" path="res://text/Wrath-of-Rawas-7-16-2024.png" id="3_ci02c"]
+[ext_resource type="Texture2D" uid="uid://cdevj1y2q06e3" path="res://ui/texture-text/Wrath-of-Rawas-7-16-2024.png" id="3_ci02c"]
 [ext_resource type="PackedScene" uid="uid://ccxsh1eiwpykx" path="res://Main_menu/UI Scenes/MainMenu Visual/MainMenuVisual.tscn" id="4_rm48s"]
 
 [node name="MainScene" type="Node"]
@@ -19,7 +19,7 @@ scale = Vector2(1.08106, 1.00385)
 texture = ExtResource("3_ci02c")
 
 [node name="MainMenu" parent="." instance=ExtResource("4_rm48s")]
-offset_left = -24.0
-offset_top = 37.0
-offset_right = -27.0
-offset_bottom = 61.0
+offset_left = -13.0
+offset_top = 18.0
+offset_right = -16.0
+offset_bottom = 42.0

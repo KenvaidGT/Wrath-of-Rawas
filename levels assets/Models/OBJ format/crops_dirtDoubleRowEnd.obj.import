@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6q7au6q3fxok"
+path="res://.godot/imported/crops_dirtDoubleRowEnd.obj-f54a92e494b942dd393cefc41bbeb1ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crops_dirtDoubleRowEnd.obj-f54a92e494b942dd393cefc41bbeb1ec.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/crops_dirtDoubleRowEnd.obj"
+dest_files=["res://.godot/imported/crops_dirtDoubleRowEnd.obj-f54a92e494b942dd393cefc41bbeb1ec.mesh", "res://.godot/imported/crops_dirtDoubleRowEnd.obj-f54a92e494b942dd393cefc41bbeb1ec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

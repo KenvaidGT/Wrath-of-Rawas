@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t88pv8pb5kwh"
+path="res://.godot/imported/ground_pathOpen.obj-bb42c81c90a05392790d3abda47871ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathOpen.obj-bb42c81c90a05392790d3abda47871ae.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/ground_pathOpen.obj"
+dest_files=["res://.godot/imported/ground_pathOpen.obj-bb42c81c90a05392790d3abda47871ae.mesh", "res://.godot/imported/ground_pathOpen.obj-bb42c81c90a05392790d3abda47871ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

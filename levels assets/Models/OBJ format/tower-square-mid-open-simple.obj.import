@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsvdgbkirp8xa"
+path="res://.godot/imported/tower-square-mid-open-simple.obj-ce9977403718701f2d300e5623b1a2c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tower-square-mid-open-simple.obj-ce9977403718701f2d300e5623b1a2c2.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/tower-square-mid-open-simple.obj"
+dest_files=["res://.godot/imported/tower-square-mid-open-simple.obj-ce9977403718701f2d300e5623b1a2c2.mesh", "res://.godot/imported/tower-square-mid-open-simple.obj-ce9977403718701f2d300e5623b1a2c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

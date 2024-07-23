@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8m7ef2vjgv5r"
+path="res://.godot/imported/tower-square-top-color.obj-1fcea098f691faa858254ac2712ab96f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tower-square-top-color.obj-1fcea098f691faa858254ac2712ab96f.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/tower-square-top-color.obj"
+dest_files=["res://.godot/imported/tower-square-top-color.obj-1fcea098f691faa858254ac2712ab96f.mesh", "res://.godot/imported/tower-square-top-color.obj-1fcea098f691faa858254ac2712ab96f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

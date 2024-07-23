@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://12qwga6v8fud"
+path="res://.godot/imported/stone_smallTopB.obj-e0b9c16f30f3acfcf8f87d9a24157118.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_smallTopB.obj-e0b9c16f30f3acfcf8f87d9a24157118.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/stone_smallTopB.obj"
+dest_files=["res://.godot/imported/stone_smallTopB.obj-e0b9c16f30f3acfcf8f87d9a24157118.mesh", "res://.godot/imported/stone_smallTopB.obj-e0b9c16f30f3acfcf8f87d9a24157118.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

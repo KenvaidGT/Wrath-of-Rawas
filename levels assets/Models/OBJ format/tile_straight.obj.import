@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://w31tj2qk5f32"
+path="res://.godot/imported/tile_straight.obj-87dccc2e1d7d5d63dbfedc187cf6b191.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_straight.obj-87dccc2e1d7d5d63dbfedc187cf6b191.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/tile_straight.obj"
+dest_files=["res://.godot/imported/tile_straight.obj-87dccc2e1d7d5d63dbfedc187cf6b191.mesh", "res://.godot/imported/tile_straight.obj-87dccc2e1d7d5d63dbfedc187cf6b191.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

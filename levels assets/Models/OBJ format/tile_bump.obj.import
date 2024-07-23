@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6xnwe1l7ghc6"
+path="res://.godot/imported/tile_bump.obj-f7de73ba9c7b76a058990d0dec13d61f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_bump.obj-f7de73ba9c7b76a058990d0dec13d61f.mesh"]
+
+source_file="res://levels assets/Models/OBJ format/tile_bump.obj"
+dest_files=["res://.godot/imported/tile_bump.obj-f7de73ba9c7b76a058990d0dec13d61f.mesh", "res://.godot/imported/tile_bump.obj-f7de73ba9c7b76a058990d0dec13d61f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://513nbpe53ujy"]
+[gd_scene load_steps=8 format=3 uid="uid://513nbpe53ujy"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Scenes/LevelSelect Visual/level_select.gd" id="1_iq1rk"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_jhaj8"]
-[ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://UI/Green/Default/button_rectangle_border.png" id="2_5l0je"]
-[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://text/Level-one-7-16-2024.png" id="3_3v5bq"]
+[ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://ui/buttons/button_rectangle_border.png" id="2_5l0je"]
+[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://ui/texture-text/Level-one-7-16-2024.png" id="3_3v5bq"]
+[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://ui/scroll-removebg-preview.png" id="4_fmag0"]
+[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://ui/texture-text/Quit-7-23-2024.png" id="5_1t5jc"]
+[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://ui/texture-text/Level-7-23-2024.png" id="7_eky06"]
 
 [node name="Level_select" type="Node2D"]
 script = ExtResource("1_iq1rk")
@@ -22,14 +25,15 @@ texture_normal = ExtResource("2_5l0je")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Exit"]
-layout_mode = 1
-offset_left = 152.0
-offset_top = 7.0
-offset_right = 181.0
-offset_bottom = 30.0
-scale = Vector2(4, 4)
-text = "Exit"
+[node name="Scroll-removebg-preview5" type="Sprite2D" parent="Exit"]
+position = Vector2(221, 51)
+scale = Vector2(0.882353, 0.441176)
+texture = ExtResource("4_fmag0")
+
+[node name="Quit-7-23-2024" type="Sprite2D" parent="Exit"]
+position = Vector2(204, 53)
+scale = Vector2(0.359375, 0.247088)
+texture = ExtResource("5_1t5jc")
 
 [node name="Level1" type="TextureButton" parent="."]
 offset_left = 172.0
@@ -39,6 +43,16 @@ offset_bottom = 236.0
 texture_normal = ExtResource("3_3v5bq")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Scroll-removebg-preview" type="Sprite2D" parent="Level1"]
+position = Vector2(115.5, 82)
+scale = Vector2(0.498366, 0.367647)
+texture = ExtResource("4_fmag0")
+
+[node name="Level-7-23-2024" type="Sprite2D" parent="Level1"]
+position = Vector2(106, 81)
+scale = Vector2(0.249408, 0.276316)
+texture = ExtResource("7_eky06")
 
 [node name="Debug_lvl" type="TextureButton" parent="."]
 offset_left = 889.0
@@ -50,6 +64,16 @@ texture_pressed = ExtResource("3_3v5bq")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Scroll-removebg-preview4" type="Sprite2D" parent="Debug_lvl"]
+position = Vector2(91, 77)
+scale = Vector2(0.498366, 0.367647)
+texture = ExtResource("4_fmag0")
+
+[node name="Level-7-23-2024" type="Sprite2D" parent="Debug_lvl"]
+position = Vector2(91, 80)
+scale = Vector2(0.249408, 0.276316)
+texture = ExtResource("7_eky06")
+
 [node name="Level2" type="TextureButton" parent="."]
 offset_left = 474.0
 offset_top = 71.0
@@ -60,6 +84,16 @@ texture_pressed = ExtResource("3_3v5bq")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Scroll-removebg-preview2" type="Sprite2D" parent="Level2"]
+position = Vector2(119, 77)
+scale = Vector2(0.464052, 0.372549)
+texture = ExtResource("4_fmag0")
+
+[node name="Level-7-23-2024" type="Sprite2D" parent="Level2"]
+position = Vector2(119, 80)
+scale = Vector2(0.249408, 0.276316)
+texture = ExtResource("7_eky06")
+
 [node name="Level3" type="TextureButton" parent="."]
 offset_left = 775.0
 offset_top = 76.0
@@ -69,6 +103,16 @@ texture_normal = ExtResource("3_3v5bq")
 texture_pressed = ExtResource("3_3v5bq")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Scroll-removebg-preview3" type="Sprite2D" parent="Level3"]
+position = Vector2(109, 76)
+scale = Vector2(0.498366, 0.367647)
+texture = ExtResource("4_fmag0")
+
+[node name="Level-7-23-2024" type="Sprite2D" parent="Level3"]
+position = Vector2(106, 81)
+scale = Vector2(0.249408, 0.276316)
+texture = ExtResource("7_eky06")
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
