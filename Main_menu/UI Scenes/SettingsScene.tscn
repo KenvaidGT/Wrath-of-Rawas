@@ -8,8 +8,8 @@
 script = ExtResource("1_nhtkc")
 
 [node name="28572b93-a225-4884-a6e7-d2e2f06Db555" type="Sprite2D" parent="."]
-position = Vector2(578.5, 325)
-scale = Vector2(0.571925, 0.559028)
+position = Vector2(637, 356)
+scale = Vector2(0.650022, 0.635364)
 texture = ExtResource("2_2trlm")
 
 [node name="Exit" type="TextureButton" parent="."]

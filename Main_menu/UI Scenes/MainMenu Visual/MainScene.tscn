@@ -2,24 +2,26 @@
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/MainMenu.gd" id="1_35muo"]
 [ext_resource type="Texture2D" uid="uid://dcbbswlqg06bs" path="res://menu_backgrounds/main_menu_background_Low_quality.png" id="2_lb78q"]
-[ext_resource type="Texture2D" uid="uid://cdevj1y2q06e3" path="res://ui/texture-text/Wrath-of-Rawas-7-16-2024.png" id="3_ci02c"]
+[ext_resource type="Texture2D" uid="uid://cdevj1y2q06e3" path="res://UI/texture-text/Wrath-of-Rawas-7-16-2024.png" id="3_ci02c"]
 [ext_resource type="PackedScene" uid="uid://ccxsh1eiwpykx" path="res://Main_menu/UI Scenes/MainMenu Visual/MainMenuVisual.tscn" id="4_rm48s"]
 
 [node name="MainScene" type="Node"]
 script = ExtResource("1_35muo")
 
 [node name="MainMenuBackgroundLowQuality" type="Sprite2D" parent="."]
-position = Vector2(584, 329)
-scale = Vector2(0.571925, 0.560764)
+position = Vector2(638, 362)
+scale = Vector2(0.635698, 0.636088)
 texture = ExtResource("2_lb78q")
 
 [node name="Wrath-of-rawas-7-16-2024" type="Sprite2D" parent="."]
-position = Vector2(582.499, 106.5)
+position = Vector2(575.499, 102.501)
 scale = Vector2(1.08106, 1.00385)
 texture = ExtResource("3_ci02c")
 
 [node name="MainMenu" parent="." instance=ExtResource("4_rm48s")]
-offset_left = -13.0
-offset_top = 18.0
-offset_right = -16.0
-offset_bottom = 42.0
+offset_left = -20.0
+offset_top = 14.0005
+offset_right = -23.0
+offset_bottom = 38.0005
+
+[editable path="MainMenu"]

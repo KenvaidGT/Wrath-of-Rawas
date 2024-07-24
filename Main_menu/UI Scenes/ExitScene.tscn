@@ -8,8 +8,8 @@
 script = ExtResource("1_00lny")
 
 [node name="LevSel" type="Sprite2D" parent="."]
-position = Vector2(573.5, 322)
-scale = Vector2(0.571925, 0.564236)
+position = Vector2(627, 364)
+scale = Vector2(0.662561, 0.653654)
 texture = ExtResource("2_87vek")
 
 [node name="exit" type="TextureButton" parent="."]
