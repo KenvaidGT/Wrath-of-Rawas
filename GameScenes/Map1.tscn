@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5m77kbumdmda"]
+[gd_scene load_steps=6 format=3 uid="uid://c5m77kbumdmda"]
 
 [ext_resource type="Script" path="res://GameScenes/Map1.gd" id="1_5c6je"]
 [ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://UI/wave_ui.tscn" id="1_e7b08"]
 [ext_resource type="PackedScene" uid="uid://dnr2gywg0vfxr" path="res://UI/game_ui.tscn" id="2_emh3p"]
-[ext_resource type="PackedScene" uid="uid://cgxg570a2xsw8" path="res://Enemies/Enemy.tscn" id="4_wkb5b"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_dlqro"]
 size = Vector3(10, 1, 10)
@@ -35,8 +34,6 @@ mesh = SubResource("BoxMesh_dlqro")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_vdybb")
-
-[node name="Enemy" parent="." instance=ExtResource("4_wkb5b")]
 
 [node name="Enemies" type="Node" parent="."]
 

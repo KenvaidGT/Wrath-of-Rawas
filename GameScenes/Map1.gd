@@ -1,19 +1,19 @@
 extends Node3D
 
 @onready var enemy_container: Node3D = $Enemy
-@onready var timer: Timer = $Timer
+@onready var timer: Timer = $Enemies/Spawner
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
 
-func _ready():
-	timer.connect("timeout", Callable(self, "_on_spawner_timeout"))
-
 func _on_start_pressed():
-	timer.start()
+	if timer != null:
+		timer.start()
+	else:
+		print("Timer node not found!2")
 
 func _on_spawner_timeout():
 	spawn_enemy()
 
 func spawn_enemy():
 	var enemy = enemy_preload.instantiate()
-	enemy.position = Vector3(-3.323, 1, -6.616)
-	enemy_container.add_child(enemy)
+	enemy.position = Vector3(randi_range(-3.323, 5), 1, -6.616)
+	$Enemies.add_child(enemy)

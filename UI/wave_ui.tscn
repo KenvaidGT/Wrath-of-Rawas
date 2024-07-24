@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://8ta4yvucudcg"]
 
-[ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://ui/buttons/button_square_depth_line.png" id="1_305k6"]
+[ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://UI/buttons/button_square_depth_line.png" id="1_305k6"]
 [ext_resource type="Script" path="res://UI/wave_ui.gd" id="1_dsj6x"]
-[ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://ui/buttons/button_square_border.png" id="2_47dby"]
+[ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://UI/buttons/button_square_border.png" id="2_47dby"]
 
 [node name="wave_UI" type="Control"]
 layout_mode = 3
