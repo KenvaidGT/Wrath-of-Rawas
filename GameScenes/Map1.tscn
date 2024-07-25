@@ -1,14 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5m77kbumdmda"]
+[gd_scene load_steps=8 format=3 uid="uid://c5m77kbumdmda"]
 
 [ext_resource type="Script" path="res://GameScenes/Map1.gd" id="1_5c6je"]
 [ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://UI/wave_ui.tscn" id="1_e7b08"]
 [ext_resource type="PackedScene" uid="uid://dnr2gywg0vfxr" path="res://UI/game_ui.tscn" id="2_emh3p"]
+[ext_resource type="PackedScene" uid="uid://vn3l12lrd52r" path="res://Towers/tower.tscn" id="5_b2kt0"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_bf846"]
+vertices = PackedVector3Array(-12, 0.0664384, -12, -12, 0.0664384, 12, 12, 0.0664384, 12, 12, 0.0664384, -12)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
 
 [sub_resource type="BoxMesh" id="BoxMesh_dlqro"]
-size = Vector3(10, 1, 10)
+size = Vector3(25, 1, 25)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vdybb"]
-size = Vector3(10, 0.5, 10)
+size = Vector3(25, 0.5, 25)
 
 [node name="Map1" type="Node3D"]
 script = ExtResource("1_5c6je")
@@ -19,25 +24,32 @@ metadata/_edit_use_anchors_ = true
 [node name="Game_UI" parent="." instance=ExtResource("2_emh3p")]
 metadata/_edit_use_anchors_ = true
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, -4.81839, 1.94779, 0)
-shadow_enabled = true
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.987688, 0.156434, 0, -0.156434, 0.987688, -0.141509, 3.57829, 4.96821)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0171044, 0)
-mesh = SubResource("BoxMesh_dlqro")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("BoxShape3D_vdybb")
-
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Spawner" type="Timer" parent="Enemies"]
+
+[node name="Tower" parent="." instance=ExtResource("5_b2kt0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.82653, 1.56638, 2.15828)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.592562, 0.805525, 0, -0.805525, 0.592562, -0.187253, 12.406, 14.8732)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, -4.81839, 1.94779, 0)
+shadow_enabled = true
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_bf846")
+
+[node name="FLOOR" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.916457, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/FLOOR"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0171044, 0)
+mesh = SubResource("BoxMesh_dlqro")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/FLOOR"]
+shape = SubResource("BoxShape3D_vdybb")
 
 [connection signal="pressed" from="Game_UI/M/VB/Start" to="." method="_on_start_pressed"]
 [connection signal="timeout" from="Enemies/Spawner" to="." method="_on_spawner_timeout"]
