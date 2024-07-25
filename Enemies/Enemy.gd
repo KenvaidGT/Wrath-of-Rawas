@@ -12,4 +12,4 @@ func _process(delta):
 	move_and_slide()
 
 func update_target_location(target_laoction):
-	nav_agent. target_position = target_laoction
+	nav_agent.target_position = target_laoction

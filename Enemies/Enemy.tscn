@@ -9,10 +9,10 @@
 [node name="CharacterBody3D" type="CharacterBody3D" groups=["Enemy"]]
 script = ExtResource("1_84avk")
 
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_4qt8o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_r7pn0")
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
