@@ -9,10 +9,10 @@ extends Node3D
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
 
 func _physics_process(_delta):
-	get_tree().call_group("Enemy" , "update_target_location" , main_house.global_transform.origin)
+	
 	get_tree().call_group("Enemy" , "update_target_location" , mana_house.global_transform.origin)
 	get_tree().call_group("Enemy" , "update_target_location" , gold_house.global_transform.origin)
-
+	get_tree().call_group("Enemy" , "update_target_location" , main_house.global_transform.origin)
 
 func _on_start_pressed():
 	timer.start()

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ek8yc38kflsk"]
+
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="1_lppfm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nmi87"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rf7fk"]
+
+[node name="Main_damage" type="CharacterBody3D"]
+script = ExtResource("1_lppfm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_nmi87")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_rf7fk")
