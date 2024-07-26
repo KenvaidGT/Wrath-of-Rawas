@@ -8,6 +8,55 @@ extends Node3D
 @onready var timer: Timer = $Enemies/Spawner
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
 
+
+#building system
+var build_mode = false
+var build_valid = false
+var build_location
+var build_type
+var mouse_position = get_viewport().get_mouse_position()
+
+
+func _ready():
+	var map_scene = ResourceLoader.load("res://GameScenes/Map1.tscn")
+	var map_node = map_scene.instantiate()
+	add_child(map_node)
+
+	for button in get_tree().get_nodes_in_group("build_buttons"):
+		button.connect("pressed", Callable(self, "initiate_build_mode").bind(button.get_name()))
+	
+
+
+
+func _process(delta):
+	pass
+
+
+func _unhandled_input(event):
+	pass
+
+
+func initiate_build_mode(tower_type):
+	build_type = tower_type + "T1"
+	build_mode = true
+	get_node("Game_UI").set_tower_preview(build_type, mouse_position)
+
+	
+
+
+func update_tower_preview():
+	pass
+
+
+func cancel_build_mode():
+	pass
+
+
+func verify_and_build():
+	pass
+
+################################
+
 func _physics_process(_delta):
 	
 	get_tree().call_group("Enemy" , "update_target_location" , mana_house.global_transform.origin)
