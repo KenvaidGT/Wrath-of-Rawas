@@ -94,6 +94,7 @@ transform = Transform3D(1, 0, 0, 0, 0.592562, 0.805525, 0, -0.805525, 0.592562, 
 
 [connection signal="pressed" from="Game_UI/M/VB/Start" to="." method="_on_start_pressed"]
 [connection signal="timeout" from="Enemies/Spawner" to="." method="_on_spawner_timeout"]
+[connection signal="navigation_mesh_changed" from="NavigationRegion3D" to="." method="_on_navigation_region_3d_navigation_mesh_changed"]
 
 [editable path="wave_UI"]
 [editable path="Game_UI"]
