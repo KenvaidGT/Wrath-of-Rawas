@@ -19,7 +19,7 @@ scale = Vector2(1.08106, 1.00385)
 texture = ExtResource("3_ci02c")
 
 [node name="MainMenu" parent="." instance=ExtResource("4_rm48s")]
-offset_left = -2.0
-offset_top = 6.0
-offset_right = -2.0
-offset_bottom = 6.0
+offset_left = -6.0
+offset_top = 68.0
+offset_right = -6.0
+offset_bottom = 68.0
