@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpu1xj2rnge5l"]
+
+[ext_resource type="ArrayMesh" uid="uid://caydvbla832dc" path="res://levels assets/Models/OBJ format/towerSquare_sampleA.obj" id="1_glngc"]
+[ext_resource type="Script" path="res://Towers_and_wall/gold_house.gd" id="1_s4lm7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_algdg"]
+size = Vector3(1, 1.4364, 1)
+
+[node name="Gold_house" type="CharacterBody3D"]
+script = ExtResource("1_s4lm7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.218201, 0)
+shape = SubResource("BoxShape3D_algdg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.514262, 0)
+mesh = ExtResource("1_glngc")

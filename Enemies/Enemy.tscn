@@ -2,17 +2,17 @@
 
 [ext_resource type="Script" path="res://Enemies/Enemy.gd" id="1_84avk"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_14upd"]
+[sub_resource type="BoxMesh" id="BoxMesh_4qt8o"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_mi122"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_r7pn0"]
 
-[node name="Enemy" type="Node3D"]
+[node name="Gold_stealer" type="CharacterBody3D" groups=["Enemy"]]
 script = ExtResource("1_84avk")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-mesh = SubResource("BoxMesh_14upd")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_4qt8o")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-shape = SubResource("BoxShape3D_mi122")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_r7pn0")

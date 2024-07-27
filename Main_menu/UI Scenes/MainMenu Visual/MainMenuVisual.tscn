@@ -40,6 +40,8 @@ custom_minimum_size = Vector2(500, 313)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
+size_flags_stretch_ratio = 1.01
+theme_override_constants/separation = 60
 
 [node name="Start" type="TextureButton" parent="M/VB"]
 layout_mode = 2
@@ -50,12 +52,12 @@ texture_pressed = ExtResource("2_lq151")
 stretch_mode = 1
 
 [node name="Scroll-removebg-preview" type="Sprite2D" parent="M/VB/Start"]
-position = Vector2(100, 28)
+position = Vector2(109, 19.2501)
 scale = Vector2(0.411765, 0.23652)
 texture = ExtResource("3_h62oe")
 
 [node name="Start-7-23-2024" type="Sprite2D" parent="M/VB/Start"]
-position = Vector2(96, 29)
+position = Vector2(105, 20.2501)
 scale = Vector2(0.177246, 0.146863)
 texture = ExtResource("4_hbpdk")
 
@@ -68,33 +70,29 @@ texture_pressed = ExtResource("2_lq151")
 stretch_mode = 1
 
 [node name="Scroll-removebg-preview" type="Sprite2D" parent="M/VB/Settings"]
-position = Vector2(91, 39)
+position = Vector2(100, 30.2501)
 scale = Vector2(0.411765, 0.23652)
 texture = ExtResource("3_h62oe")
 
 [node name="Settings-7-23-2024" type="Sprite2D" parent="M/VB/Settings"]
-position = Vector2(89, 40)
+position = Vector2(98.0001, 31.2501)
 scale = Vector2(0.185547, 0.227393)
 texture = ExtResource("5_c7pgc")
-
-[node name="Control" type="Control" parent="M/VB"]
-custom_minimum_size = Vector2(0, 10)
-layout_mode = 2
 
 [node name="Quit" type="TextureButton" parent="M/VB"]
 custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 8
+size_flags_vertical = 4
 texture_normal = ExtResource("1_vrcvb")
 texture_pressed = ExtResource("2_lq151")
 
 [node name="Scroll-removebg-preview" type="Sprite2D" parent="M/VB/Quit"]
-position = Vector2(92, 39)
+position = Vector2(101, 30.2501)
 scale = Vector2(0.411765, 0.23652)
 texture = ExtResource("3_h62oe")
 
 [node name="Quit-7-23-2024" type="Sprite2D" parent="M/VB/Quit"]
-position = Vector2(91, 40)
+position = Vector2(100, 31.2501)
 scale = Vector2(0.197754, 0.104617)
 texture = ExtResource("6_5lo7x")
