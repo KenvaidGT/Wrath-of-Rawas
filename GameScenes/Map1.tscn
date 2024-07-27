@@ -1,12 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://c5m77kbumdmda"]
+[gd_scene load_steps=14 format=3 uid="uid://c5m77kbumdmda"]
 
 [ext_resource type="Script" path="res://GameScenes/Map1.gd" id="1_5c6je"]
 [ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://UI/wave_ui.tscn" id="1_e7b08"]
 [ext_resource type="PackedScene" uid="uid://dnr2gywg0vfxr" path="res://UI/game_ui.tscn" id="2_emh3p"]
+[ext_resource type="PackedScene" uid="uid://c8w3pynyi6lmb" path="res://GameScenes/WinGameMenu.tscn" id="3_sq6dd"]
 [ext_resource type="PackedScene" uid="uid://doumvi8pypvta" path="res://Towers_and_wall/main_house.tscn" id="4_5uinx"]
 [ext_resource type="PackedScene" uid="uid://be0ubwslris3e" path="res://Towers_and_wall/Wall.tscn" id="4_rmimr"]
 [ext_resource type="PackedScene" uid="uid://bx8hla8ygh4" path="res://Towers_and_wall/mana_house.tscn" id="5_bptmj"]
 [ext_resource type="PackedScene" uid="uid://dpu1xj2rnge5l" path="res://Towers_and_wall/gold_house.tscn" id="6_nin5w"]
+[ext_resource type="PackedScene" uid="uid://35rty2hrer4y" path="res://GameScenes/EndGameMenu.tscn" id="8_34g5v"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_rhqds"]
 
@@ -26,7 +28,10 @@ size = Vector3(25, 0.5, 25)
 script = ExtResource("1_5c6je")
 
 [node name="wave_UI" parent="." instance=ExtResource("1_e7b08")]
-metadata/_edit_use_anchors_ = true
+
+[node name="WinGameUI" parent="." instance=ExtResource("3_sq6dd")]
+
+[node name="EndGameUI" parent="." instance=ExtResource("8_34g5v")]
 
 [node name="Game_UI" parent="." instance=ExtResource("2_emh3p")]
 metadata/_edit_use_anchors_ = true
@@ -97,4 +102,7 @@ transform = Transform3D(1, 0, 0, 0, 0.592562, 0.805525, 0, -0.805525, 0.592562, 
 [connection signal="navigation_mesh_changed" from="NavigationRegion3D" to="." method="_on_navigation_region_3d_navigation_mesh_changed"]
 
 [editable path="wave_UI"]
+[editable path="wave_UI/EndGameUI"]
+[editable path="wave_UI/WinGameUI"]
+[editable path="EndGameUI"]
 [editable path="Game_UI"]

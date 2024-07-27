@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://35rty2hrer4y"]
+
+[ext_resource type="Script" path="res://GameScenes/EndGameMenu.gd" id="1_cnrlf"]
+[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://UI/scroll-removebg-preview.png" id="1_h72m0"]
+[ext_resource type="Texture2D" uid="uid://c2vl3q33q5q17" path="res://UI/images.jpg" id="2_wo4sc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g7y4k"]
+font_size = 90
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0.280013, 0.286266, 0.240891, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6hv6h"]
+font_size = 171
+
+[node name="EndGameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cnrlf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(343.33, 120.905)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -117.455
+offset_top = 69.555
+offset_right = 494.545
+offset_bottom = 478.235
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.39, 0.39)
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="MainMenu button" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_h72m0")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/MainMenu button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Main Menu"
+label_settings = SubResource("LabelSettings_g7y4k")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lost label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 330.305
+offset_top = 94.53
+offset_right = 942.306
+offset_bottom = 218.53
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Lost!"
+label_settings = SubResource("LabelSettings_6hv6h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureBox" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 0.188235)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -6.28319
+texture = ExtResource("2_wo4sc")
+expand_mode = 1
+
+[connection signal="pressed" from="VBoxContainer/MainMenu button" to="." method="_on_main_menu_button_pressed"]

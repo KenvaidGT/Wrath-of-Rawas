@@ -2,12 +2,14 @@ extends Control
 
 @onready var game_ui: Control = $"."
 @onready var wave_ui: Control = $wave_UI
+@onready var lose_ui: Control = $EndGameUI
 var enemy = 0
 
 func _ready():
 	wave_ui.visible = false
+	lose_ui.visible = false
 	var start_button = $M/VB/Start
-
+	
 func _on_start_pressed():
 	game_ui.visible = false
 	wave_ui.visible = true
@@ -30,3 +32,4 @@ func _on_delet_tower_pressed():
 
 func _on_wall_pressed():
 	print("Wall")
+	

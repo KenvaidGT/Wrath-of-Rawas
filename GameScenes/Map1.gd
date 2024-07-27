@@ -3,11 +3,15 @@ extends Node3D
 @onready var mana_house = $Towers/Mana_house
 @onready var main_house = $Towers/Main_house
 @onready var gold_house = $Towers/Gold_house
-
+@onready var lose_ui: Control = $EndGameUI
+@onready var win_ui: Control = $WinGameUI
 @onready var enemy_container: Node3D = $Enemy
 @onready var timer: Timer = $Enemies/Spawner
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
 
+func _ready():
+	lose_ui.visible = false
+	win_ui.visible = false
 func _physics_process(_delta):
 	
 	get_tree().call_group("Enemy" , "update_target_location" , mana_house.global_transform.origin)

@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://8ta4yvucudcg"]
+[gd_scene load_steps=6 format=3 uid="uid://8ta4yvucudcg"]
 
 [ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://UI/buttons/button_square_depth_line.png" id="1_305k6"]
 [ext_resource type="Script" path="res://UI/wave_ui.gd" id="1_dsj6x"]
 [ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://UI/buttons/button_square_border.png" id="2_47dby"]
+[ext_resource type="PackedScene" uid="uid://35rty2hrer4y" path="res://GameScenes/EndGameMenu.tscn" id="4_qq8uq"]
+[ext_resource type="PackedScene" uid="uid://c8w3pynyi6lmb" path="res://GameScenes/WinGameMenu.tscn" id="5_l84hd"]
 
 [node name="wave_UI" type="Control"]
 layout_mode = 3
@@ -173,8 +175,18 @@ text = "Win
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="EndGameUI" parent="." instance=ExtResource("4_qq8uq")]
+layout_mode = 1
+
+[node name="WinGameUI" parent="." instance=ExtResource("5_l84hd")]
+layout_mode = 1
+
 [connection signal="pressed" from="VB3/Attack" to="." method="_on_attack_pressed"]
 [connection signal="pressed" from="VB3/Steal Gold" to="." method="_on_steal_gold_pressed"]
 [connection signal="pressed" from="VB3/Steal Mana" to="." method="_on_steal_mana_pressed"]
 [connection signal="pressed" from="VB3/Lose" to="." method="_on_lose_pressed"]
 [connection signal="pressed" from="VB3/Win" to="." method="_on_win_pressed"]
+[connection signal="pressed" from="WinGameUI/VBoxContainer/MainMenu button" to="." method="_on_main_menu_button_pressed"]
+
+[editable path="EndGameUI"]
+[editable path="WinGameUI"]
