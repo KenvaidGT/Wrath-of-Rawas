@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byqy6f1uu3ddl"
-path="res://.godot/imported/button_rectangle_gradient.png-1d132beb81e6bef1441e7684876c85aa.ctex"
+path="res://.godot/imported/button_rectangle_gradient.png-8dc47f34eb0917fb10219cc17118cd53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/buttons/button_rectangle_gradient.png"
-dest_files=["res://.godot/imported/button_rectangle_gradient.png-1d132beb81e6bef1441e7684876c85aa.ctex"]
+source_file="res://ui/buttons/button_rectangle_gradient.png"
+dest_files=["res://.godot/imported/button_rectangle_gradient.png-8dc47f34eb0917fb10219cc17118cd53.ctex"]
 
 [params]
 
