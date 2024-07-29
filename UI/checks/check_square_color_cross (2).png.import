@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://defsqjjhpfw8q"
-path="res://.godot/imported/check_square_color_cross (2).png-75627d5a30e2f430184e583b373d0239.ctex"
+path="res://.godot/imported/check_square_color_cross (2).png-7d0e4f879c68239bbc4321034b5e0dd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/checks/check_square_color_cross (2).png"
-dest_files=["res://.godot/imported/check_square_color_cross (2).png-75627d5a30e2f430184e583b373d0239.ctex"]
+source_file="res://ui/checks/check_square_color_cross (2).png"
+dest_files=["res://.godot/imported/check_square_color_cross (2).png-7d0e4f879c68239bbc4321034b5e0dd7.ctex"]
 
 [params]
 

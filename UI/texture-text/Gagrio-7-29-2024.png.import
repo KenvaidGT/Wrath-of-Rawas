@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5qsw6xlmr2i4"
-path="res://.godot/imported/28572b93-a225-4884-a6e7-d2e2f06db555.png-9a1562952eb04ef73488c98f012c60dd.ctex"
+uid="uid://bvsmjmcy2gr46"
+path="res://.godot/imported/Gagrio-7-29-2024.png-4e5e9d154b28550a0a5f421fab969c66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menu_backgrounds/28572b93-a225-4884-a6e7-d2e2f06db555.png"
-dest_files=["res://.godot/imported/28572b93-a225-4884-a6e7-d2e2f06db555.png-9a1562952eb04ef73488c98f012c60dd.ctex"]
+source_file="res://ui/texture-text/Gagrio-7-29-2024.png"
+dest_files=["res://.godot/imported/Gagrio-7-29-2024.png-4e5e9d154b28550a0a5f421fab969c66.ctex"]
 
 [params]
 

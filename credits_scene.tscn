@@ -1,0 +1,59 @@
+[gd_scene load_steps=10 format=3 uid="uid://boea4ni2hmt5y"]
+
+[ext_resource type="Texture2D" uid="uid://ckt7p6c5jp6gv" path="res://menu_backgrounds/Credits.png" id="1_ca6gx"]
+[ext_resource type="Texture2D" uid="uid://baj02utrebb4v" path="res://ui/texture-text/Wrath-of-Rawas-7-29-2024.png" id="2_fcii6"]
+[ext_resource type="Texture2D" uid="uid://dly6fobc3epjk" path="res://ui/texture-text/Created-by-7-29-2024.png" id="3_s4tvy"]
+[ext_resource type="Texture2D" uid="uid://2x2i42snsb2c" path="res://ui/texture-text/Fu-7-29-2024.png" id="4_y1nn6"]
+[ext_resource type="Texture2D" uid="uid://bvsmjmcy2gr46" path="res://ui/texture-text/Gagrio-7-29-2024.png" id="5_gr3j0"]
+[ext_resource type="Texture2D" uid="uid://4dxq6ju2pvwx" path="res://ui/texture-text/Gmordex-7-29-2024.png" id="6_gfp84"]
+[ext_resource type="Texture2D" uid="uid://hd0w0g1mt28e" path="res://ui/texture-text/Kenvaid-GT-7-29-2024.png" id="7_7fg57"]
+[ext_resource type="Texture2D" uid="uid://cgf7hdqeemwhs" path="res://ui/texture-text/Luna-Slendy-7-29-2024.png" id="8_y04cj"]
+[ext_resource type="Texture2D" uid="uid://u5tympdrb6xg" path="res://ui/texture-text/Comfusedead-7-29-2024.png" id="9_pkkte"]
+
+[node name="Credits scene" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-38.0]
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(640, 361)
+scale = Vector2(0.632937, 0.631944)
+texture = ExtResource("1_ca6gx")
+
+[node name="Wrath-of-rawas-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(336, 64)
+scale = Vector2(0.717773, 0.70979)
+texture = ExtResource("2_fcii6")
+
+[node name="Created-by-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(172, 210)
+scale = Vector2(0.371582, 0.359418)
+texture = ExtResource("3_s4tvy")
+
+[node name="Fu-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(80, 286)
+scale = Vector2(0.150433, 0.133974)
+texture = ExtResource("4_y1nn6")
+
+[node name="Gagrio-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(127, 385)
+scale = Vector2(0.25293, 0.292969)
+texture = ExtResource("5_gr3j0")
+
+[node name="Gmordex-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(147, 454)
+scale = Vector2(0.307617, 0.275)
+texture = ExtResource("6_gfp84")
+
+[node name="Kenvaid-gt-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(189, 523)
+scale = Vector2(0.393555, 0.344828)
+texture = ExtResource("7_7fg57")
+
+[node name="Luna-slendy-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(190, 594)
+scale = Vector2(0.404297, 0.332317)
+texture = ExtResource("8_y04cj")
+
+[node name="Comfusedead-7-29-2024" type="Sprite2D" parent="."]
+position = Vector2(191, 675)
+scale = Vector2(0.385742, 0.33046)
+texture = ExtResource("9_pkkte")
