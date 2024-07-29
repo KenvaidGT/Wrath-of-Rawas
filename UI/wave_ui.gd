@@ -11,7 +11,6 @@ var Mana = 10
 func _ready():
 	lose_ui.visible = false
 	win_ui.visible = false
-	MainMenu_button.pressed.connect(_on_main_menu_button_pressed)
 	
 func _on_attack_pressed():
 	print("Hp -1")
@@ -36,5 +35,3 @@ func _on_lose_pressed():
 func _on_win_pressed():
 	win_ui.visible = true
 
-func _on_main_menu_button_pressed():
-	get_tree().change_scene_to_file("res://main_menu.tscn")

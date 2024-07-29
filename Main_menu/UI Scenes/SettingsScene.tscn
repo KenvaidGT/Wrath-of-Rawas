@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dnqv3q8meego4"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/SettingsScene.gd" id="1_nhtkc"]
-[ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://ui/buttons/button_rectangle_border.png" id="2_00q4r"]
+[ext_resource type="Texture2D" uid="uid://d7abnivutmis" path="res://UI/buttons/button_rectangle_border.png" id="2_00q4r"]
 [ext_resource type="Texture2D" uid="uid://b5qsw6xlmr2i4" path="res://menu_backgrounds/28572b93-a225-4884-a6e7-d2e2f06db555.png" id="2_2trlm"]
 
 [node name="SettingsScene" type="Node2D"]
