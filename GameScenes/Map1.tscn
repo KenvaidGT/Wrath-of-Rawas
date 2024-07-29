@@ -29,13 +29,13 @@ script = ExtResource("1_5c6je")
 
 [node name="wave_UI" parent="." instance=ExtResource("1_e7b08")]
 
-[node name="WinGameUI" parent="." instance=ExtResource("3_sq6dd")]
-
-[node name="EndGameUI" parent="." instance=ExtResource("8_34g5v")]
-
 [node name="Tower1" parent="wave_UI/M/VB2" index="0" groups=["build_buttons"]]
 
 [node name="Tower2" parent="wave_UI/M/VB2" index="1" groups=["build_buttons"]]
+
+[node name="WinGameUI" parent="." instance=ExtResource("3_sq6dd")]
+
+[node name="EndGameUI" parent="." instance=ExtResource("8_34g5v")]
 
 [node name="Game_UI" parent="." instance=ExtResource("2_emh3p")]
 metadata/_edit_use_anchors_ = true

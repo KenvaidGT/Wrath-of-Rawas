@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3c580tce8v7e"
-path="res://.godot/imported/icon_outline_square (2).png-a15ddb8d36f2ddaddf4e8d3ceb43507c.ctex"
+path="res://.godot/imported/icon_outline_square (2).png-c8b56ad5441405c9d1da9f3858d1957b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/sliders and other icons/icon_outline_square (2).png"
-dest_files=["res://.godot/imported/icon_outline_square (2).png-a15ddb8d36f2ddaddf4e8d3ceb43507c.ctex"]
+source_file="res://UI/sliders and other icons/icon_outline_square (2).png"
+dest_files=["res://.godot/imported/icon_outline_square (2).png-c8b56ad5441405c9d1da9f3858d1957b.ctex"]
 
 [params]
 
