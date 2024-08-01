@@ -34,4 +34,3 @@ func _on_lose_pressed():
 
 func _on_win_pressed():
 	win_ui.visible = true
-

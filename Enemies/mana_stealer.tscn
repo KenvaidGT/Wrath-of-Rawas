@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bv8qacxseflrp"]
 
-[ext_resource type="Script" path="res://Mana_stealer.gd" id="1_28wx7"]
+[ext_resource type="Script" path="res://Enemies/mana_stealer.gd" id="1_28wx7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l2g73"]
 

@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Main_menu/UI Scenes/LevelSelect Visual/level_select.gd" id="1_iq1rk"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_jhaj8"]
-[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://ui/scroll-removebg-preview.png" id="4_fmag0"]
-[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://ui/texture-text/Quit-7-23-2024.png" id="5_1t5jc"]
-[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://ui/texture-text/Level-7-23-2024.png" id="7_eky06"]
+[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://UI/scroll-removebg-preview.png" id="4_fmag0"]
+[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://UI/texture-text/Quit-7-23-2024.png" id="5_1t5jc"]
+[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://UI/texture-text/Level-7-23-2024.png" id="7_eky06"]
 
 [node name="Level_select" type="Node2D"]
 script = ExtResource("1_iq1rk")
