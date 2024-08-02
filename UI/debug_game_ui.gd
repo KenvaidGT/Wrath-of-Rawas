@@ -5,17 +5,15 @@ extends Control
 @onready var lose_ui: Control = $EndGameUI
 var enemy = 0
 
-signal enemy_changed(new_value)
-
 func _ready():
 	wave_ui.visible = false
 	lose_ui.visible = false
 	var start_button = $M/VB/Start
-
+	
 func _on_start_pressed():
 	game_ui.visible = false
 	wave_ui.visible = true
-
+	
 func _on_tower_1_pressed():
 	print("Tower1_build")
 
@@ -27,8 +25,6 @@ func _on_tower_3_pressed():
 
 func _on_enemy_1_pressed():
 	enemy += 1
-	print("Enemy: ", enemy)
-	emit_signal("enemy_changed", enemy)
 
 func _on_delet_tower_pressed():
 	print("Delet_tower")
