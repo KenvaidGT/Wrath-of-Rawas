@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dnqv3q8meego4"]
+[gd_scene load_steps=6 format=3 uid="uid://dnqv3q8meego4"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Code/SettingsScene.gd" id="1_nhtkc"]
 [ext_resource type="Texture2D" uid="uid://b5qsw6xlmr2i4" path="res://menu_backgrounds/settings.png" id="2_2trlm"]
-[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://ui/scroll-removebg-preview.png" id="3_lcdx1"]
-[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://ui/texture-text/Quit-7-23-2024.png" id="4_s1iv2"]
+[ext_resource type="Texture2D" uid="uid://b34h3p6csof5e" path="res://ui/photo_2024-08-02_10-57-16.jpg" id="3_hgohu"]
+[ext_resource type="Texture2D" uid="uid://s56k2qxqiay4" path="res://ui/texture-text/quit-removebg-preview_optimized.png" id="4_d2c28"]
+[ext_resource type="Texture2D" uid="uid://b3t1k2qvlarew" path="res://ui/texture-text/quit2-removebg-preview.png" id="5_swvsk"]
 
 [node name="SettingsScene" type="Node2D"]
 script = ExtResource("1_nhtkc")
@@ -13,18 +14,19 @@ position = Vector2(637, 356)
 scale = Vector2(0.650022, 0.635364)
 texture = ExtResource("2_2trlm")
 
-[node name="Exit" type="TextureButton" parent="."]
-offset_left = 409.0
-offset_top = 255.0
-offset_right = 931.0
-offset_bottom = 487.0
-texture_normal = ExtResource("3_lcdx1")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="Photo2024-08-0210-57-16" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.443137)
+position = Vector2(653.5, 350.25)
+scale = Vector2(1.05234, 1.02941)
+texture = ExtResource("3_hgohu")
 
-[node name="Quit-7-23-2024" type="Sprite2D" parent="Exit"]
-position = Vector2(260, 121)
-scale = Vector2(0.389648, 0.268719)
-texture = ExtResource("4_s1iv2")
+[node name="Exit" type="TextureButton" parent="."]
+offset_left = 377.0
+offset_top = 255.0
+offset_right = 961.0
+offset_bottom = 503.0
+texture_normal = ExtResource("4_d2c28")
+texture_pressed = ExtResource("5_swvsk")
+stretch_mode = 0
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

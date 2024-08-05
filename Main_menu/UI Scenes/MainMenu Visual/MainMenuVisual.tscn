@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccxsh1eiwpykx"]
+[gd_scene load_steps=7 format=3 uid="uid://ccxsh1eiwpykx"]
 
-[ext_resource type="Texture2D" uid="uid://bkacdwbnlida" path="res://ui/scroll-removebg-preview (2) (1) (1).png" id="1_d6pft"]
-[ext_resource type="Texture2D" uid="uid://cij67fkcl4l8i" path="res://ui/texture-text/Start-7-23-2024.png" id="4_hbpdk"]
-[ext_resource type="Texture2D" uid="uid://cfpf1tahwx3aa" path="res://ui/scroll-removebg-preview (2).png" id="4_utfe5"]
-[ext_resource type="Texture2D" uid="uid://dxpk6u6mre36x" path="res://ui/texture-text/Settings-7-23-2024.png" id="5_c7pgc"]
-[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://ui/texture-text/Quit-7-23-2024.png" id="6_5lo7x"]
+[ext_resource type="Texture2D" uid="uid://bjdwudxv8hl8a" path="res://ui/texture-text/start-removebg-preview_optimized.png" id="1_lkyhd"]
+[ext_resource type="Texture2D" uid="uid://blisp620povgj" path="res://ui/texture-text/start2-removebg-preview.png" id="2_drcdf"]
+[ext_resource type="Texture2D" uid="uid://cmdwsnxxae2ip" path="res://ui/texture-text/settings-removebg-preview_optimized.png" id="3_ynnys"]
+[ext_resource type="Texture2D" uid="uid://dleg0qew4rvyv" path="res://ui/texture-text/settings2-removebg-preview.png" id="4_1ttb1"]
+[ext_resource type="Texture2D" uid="uid://ot683dqvwy0m" path="res://ui/texture-text/quit-removebg-preview_1_optimized.png" id="5_mhnii"]
+[ext_resource type="Texture2D" uid="uid://b3t1k2qvlarew" path="res://ui/texture-text/quit2-removebg-preview.png" id="6_ml0pe"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -28,7 +29,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1.0
-offset_top = -1.0
+offset_top = -3.0
 offset_right = 1.0
 offset_bottom = 1.0
 grow_horizontal = 2
@@ -46,37 +47,23 @@ theme_override_constants/separation = 60
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("1_d6pft")
-texture_pressed = ExtResource("1_d6pft")
-stretch_mode = 1
-
-[node name="Start-7-23-2024" type="Sprite2D" parent="M/VB/Start"]
-position = Vector2(165, 50)
-scale = Vector2(0.198242, 0.131891)
-texture = ExtResource("4_hbpdk")
+texture_normal = ExtResource("1_lkyhd")
+texture_pressed = ExtResource("2_drcdf")
+stretch_mode = 0
 
 [node name="Settings" type="TextureButton" parent="M/VB"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("4_utfe5")
-texture_pressed = ExtResource("4_utfe5")
+texture_normal = ExtResource("3_ynnys")
+texture_pressed = ExtResource("4_1ttb1")
 stretch_mode = 1
-
-[node name="Settings-7-23-2024" type="Sprite2D" parent="M/VB/Settings"]
-position = Vector2(198, 49)
-scale = Vector2(0.268555, 0.254654)
-texture = ExtResource("5_c7pgc")
 
 [node name="Quit" type="TextureButton" parent="M/VB"]
 custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("1_d6pft")
-texture_pressed = ExtResource("1_d6pft")
-
-[node name="Quit-7-23-2024" type="Sprite2D" parent="M/VB/Quit"]
-position = Vector2(165, 50)
-scale = Vector2(0.197754, 0.104617)
-texture = ExtResource("6_5lo7x")
+texture_normal = ExtResource("5_mhnii")
+texture_pressed = ExtResource("6_ml0pe")
+stretch_mode = 0

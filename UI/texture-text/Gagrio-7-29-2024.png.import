@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvsmjmcy2gr46"
-path="res://.godot/imported/Gagrio-7-29-2024.png-179273182d84b06e7a9247fcecaf333c.ctex"
+path="res://.godot/imported/Gagrio-7-29-2024.png-4e5e9d154b28550a0a5f421fab969c66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/texture-text/Gagrio-7-29-2024.png"
-dest_files=["res://.godot/imported/Gagrio-7-29-2024.png-179273182d84b06e7a9247fcecaf333c.ctex"]
+source_file="res://ui/texture-text/Gagrio-7-29-2024.png"
+dest_files=["res://.godot/imported/Gagrio-7-29-2024.png-4e5e9d154b28550a0a5f421fab969c66.ctex"]
 
 [params]
 

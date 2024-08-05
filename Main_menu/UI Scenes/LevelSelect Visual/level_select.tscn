@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://513nbpe53ujy"]
+[gd_scene load_steps=9 format=3 uid="uid://513nbpe53ujy"]
 
 [ext_resource type="Script" path="res://Main_menu/UI Scenes/LevelSelect Visual/level_select.gd" id="1_iq1rk"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_jhaj8"]
-[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://UI/scroll-removebg-preview.png" id="4_fmag0"]
-[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://UI/texture-text/Quit-7-23-2024.png" id="5_1t5jc"]
-[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://UI/texture-text/Level-7-23-2024.png" id="7_eky06"]
+[ext_resource type="Texture2D" uid="uid://b34h3p6csof5e" path="res://ui/photo_2024-08-02_10-57-16.jpg" id="3_bl7nf"]
+[ext_resource type="Texture2D" uid="uid://s56k2qxqiay4" path="res://ui/texture-text/quit-removebg-preview_optimized.png" id="4_bbjym"]
+[ext_resource type="Texture2D" uid="uid://030xoju4srwd" path="res://ui/texture-text/level-removebg-preview.png" id="5_bpwt0"]
+[ext_resource type="Texture2D" uid="uid://b3t1k2qvlarew" path="res://ui/texture-text/quit2-removebg-preview.png" id="5_tt6bm"]
+[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://ui/texture-text/Level-one-7-16-2024.png" id="7_41j45"]
+[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://ui/texture-text/Level-7-23-2024.png" id="8_obkcn"]
 
 [node name="Level_select" type="Node2D"]
 script = ExtResource("1_iq1rk")
@@ -14,79 +17,60 @@ position = Vector2(644, 360)
 scale = Vector2(0.647816, 0.639107)
 texture = ExtResource("1_jhaj8")
 
+[node name="Photo2024-08-0210-57-16" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.443137)
+position = Vector2(653.5, 350.25)
+scale = Vector2(1.05234, 1.02941)
+texture = ExtResource("3_bl7nf")
+
 [node name="Exit" type="TextureButton" parent="."]
 offset_left = 279.0
 offset_top = 476.0
 offset_right = 757.0
-offset_bottom = 646.0
-texture_normal = ExtResource("4_fmag0")
+offset_bottom = 673.0
+texture_normal = ExtResource("4_bbjym")
+texture_pressed = ExtResource("5_tt6bm")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Quit-7-23-2024" type="Sprite2D" parent="Exit"]
-position = Vector2(236, 86)
-scale = Vector2(0.359375, 0.247088)
-texture = ExtResource("5_1t5jc")
 
 [node name="Level1" type="TextureButton" parent="."]
-offset_left = 116.0
-offset_top = 70.0
-offset_right = 451.0
-offset_bottom = 236.0
-texture_normal = ExtResource("4_fmag0")
-texture_pressed = ExtResource("4_fmag0")
+offset_top = 67.0
+offset_right = 380.0
+offset_bottom = 246.0
+texture_normal = ExtResource("5_bpwt0")
+texture_pressed = ExtResource("7_41j45")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Level-7-23-2024" type="Sprite2D" parent="Level1"]
-position = Vector2(168.5, 85.8125)
-scale = Vector2(0.299763, 0.307494)
-texture = ExtResource("7_eky06")
 
 [node name="Debug_lvl" type="TextureButton" parent="."]
 offset_left = 808.0
 offset_top = 448.0
 offset_right = 1207.0
 offset_bottom = 614.0
-texture_normal = ExtResource("4_fmag0")
-texture_pressed = ExtResource("4_fmag0")
+texture_normal = ExtResource("5_bpwt0")
+texture_pressed = ExtResource("8_obkcn")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Level-7-23-2024" type="Sprite2D" parent="Debug_lvl"]
-position = Vector2(196.5, 80)
-scale = Vector2(0.347156, 0.276316)
-texture = ExtResource("7_eky06")
 
 [node name="Level2" type="TextureButton" parent="."]
-offset_left = 436.0
-offset_top = 64.0
-offset_right = 770.0
-offset_bottom = 241.0
-texture_normal = ExtResource("4_fmag0")
-texture_pressed = ExtResource("4_fmag0")
+offset_left = 419.0
+offset_top = 69.0
+offset_right = 800.0
+offset_bottom = 248.0
+texture_normal = ExtResource("5_bpwt0")
+texture_pressed = ExtResource("8_obkcn")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Level-7-23-2024" type="Sprite2D" parent="Level2"]
-position = Vector2(164.437, 88)
-scale = Vector2(0.302281, 0.305206)
-texture = ExtResource("7_eky06")
 
 [node name="Level3" type="TextureButton" parent="."]
-offset_left = 771.0
-offset_top = 68.0
-offset_right = 1107.0
-offset_bottom = 245.0
-texture_normal = ExtResource("4_fmag0")
-texture_pressed = ExtResource("4_fmag0")
+offset_left = 808.0
+offset_top = 58.0
+offset_right = 1144.0
+offset_bottom = 235.0
+texture_normal = ExtResource("5_bpwt0")
+texture_pressed = ExtResource("8_obkcn")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Level-7-23-2024" type="Sprite2D" parent="Level3"]
-position = Vector2(166, 90.1875)
-scale = Vector2(0.308057, 0.307494)
-texture = ExtResource("7_eky06")
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]

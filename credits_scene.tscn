@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://boea4ni2hmt5y"]
+[gd_scene load_steps=11 format=3 uid="uid://boea4ni2hmt5y"]
 
 [ext_resource type="Texture2D" uid="uid://ckt7p6c5jp6gv" path="res://menu_backgrounds/Credits.png" id="1_ca6gx"]
+[ext_resource type="Texture2D" uid="uid://b34h3p6csof5e" path="res://ui/photo_2024-08-02_10-57-16.jpg" id="2_4lxde"]
 [ext_resource type="Texture2D" uid="uid://baj02utrebb4v" path="res://ui/texture-text/Wrath-of-Rawas-7-29-2024.png" id="2_fcii6"]
 [ext_resource type="Texture2D" uid="uid://dly6fobc3epjk" path="res://ui/texture-text/Created-by-7-29-2024.png" id="3_s4tvy"]
 [ext_resource type="Texture2D" uid="uid://2x2i42snsb2c" path="res://ui/texture-text/Fu-7-29-2024.png" id="4_y1nn6"]
@@ -17,6 +18,12 @@ metadata/_edit_horizontal_guides_ = [-38.0]
 position = Vector2(640, 361)
 scale = Vector2(0.632937, 0.631944)
 texture = ExtResource("1_ca6gx")
+
+[node name="Photo2024-08-0210-57-16" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.443137)
+position = Vector2(653.5, 350.25)
+scale = Vector2(1.05234, 1.02941)
+texture = ExtResource("2_4lxde")
 
 [node name="Wrath-of-rawas-7-29-2024" type="Sprite2D" parent="."]
 position = Vector2(336, 64)
