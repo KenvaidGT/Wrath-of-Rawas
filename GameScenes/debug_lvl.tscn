@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://4g75un8wa4in"]
+[gd_scene load_steps=24 format=3 uid="uid://4g75un8wa4in"]
 
 [ext_resource type="Script" path="res://GameScenes/debug_lvl.gd" id="1_ly31a"]
 [ext_resource type="PackedScene" uid="uid://cutkc7mmilbft" path="res://UI/debug_game_ui.tscn" id="2_by0yn"]
@@ -7,8 +7,19 @@
 [ext_resource type="PackedScene" uid="uid://bx8hla8ygh4" path="res://Towers_and_wall/mana_house.tscn" id="4_mb40k"]
 [ext_resource type="PackedScene" uid="uid://doumvi8pypvta" path="res://Towers_and_wall/main_house.tscn" id="5_pwapq"]
 [ext_resource type="PackedScene" uid="uid://be0ubwslris3e" path="res://Towers_and_wall/Wall.tscn" id="6_fk255"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_bw4qg"]
+[ext_resource type="PackedScene" uid="uid://ddcbjunj386k1" path="res://Towers_and_wall/attack_tower[TK]/attack_tower[tk].tscn" id="8_gvlpg"]
+[ext_resource type="ArrayMesh" uid="uid://yg4unmdo86p5" path="res://levels assets/Models/OBJ format/bridge_stone.obj" id="9_28neo"]
+[ext_resource type="ArrayMesh" uid="uid://tfpgrddo3eqj" path="res://levels assets/Models/OBJ format/bridge_side_woodRound.obj" id="10_m1f5l"]
+[ext_resource type="ArrayMesh" uid="uid://c0ip2a81mk7to" path="res://levels assets/Models/OBJ format/bridge_wood.obj" id="11_yqtxr"]
+[ext_resource type="ArrayMesh" uid="uid://dc80wuywftp7w" path="res://levels assets/Models/OBJ format/campfire_stones.obj" id="12_frgsg"]
+[ext_resource type="ArrayMesh" uid="uid://bqx3ey1wla4dh" path="res://levels assets/Models/OBJ format/cliff_blockCave_stone.obj" id="13_hdyig"]
+[ext_resource type="ArrayMesh" uid="uid://rlcyelm5fuu0" path="res://levels assets/Models/OBJ format/cliff_cornerInner_stone.obj" id="14_wiwof"]
+[ext_resource type="ArrayMesh" uid="uid://dalad3c7kxahw" path="res://levels assets/Models/OBJ format/crops_dirtRowCorner.obj" id="15_kk8je"]
+[ext_resource type="ArrayMesh" uid="uid://ocx1mecd5edx" path="res://levels assets/Models/OBJ format/fence_bendCenter.obj" id="16_hfn7h"]
+[ext_resource type="ArrayMesh" uid="uid://dncfqs5rwysnn" path="res://levels assets/Models/OBJ format/path_stoneCircle.obj" id="17_gt5w5"]
+[ext_resource type="ArrayMesh" uid="uid://u8be6cibauw4" path="res://levels assets/Models/OBJ format/path_stone.obj" id="18_orm1q"]
+[ext_resource type="ArrayMesh" uid="uid://dqlofmhdyihfl" path="res://levels assets/Models/OBJ format/pine-fall.obj" id="19_yipof"]
+[ext_resource type="ArrayMesh" uid="uid://c4vbdrev4cv8d" path="res://levels assets/Models/OBJ format/pot_large.obj" id="20_y2nx1"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_lrl38"]
 vertices = PackedVector3Array(-12, 0.566439, -2.4, -6.9, 0.566439, -2.3, -6.8, 0.566439, -3.1, -12, 0.566439, -2.4, -6.8, 0.566439, -3.1, -6.1, 0.566439, -3.3, -6.1, 0.566439, -12, -12, 0.566439, -12, 0.3, 0.566439, -0.5, 0.400001, 0.566439, 0, 0.7, 0.566439, 0, 0.8, 0.566439, -0.5, -5.6, 0.566439, -3.2, -2.8, 0.566439, -0.7, 0, 0.566439, -0.7, 4, 0.566439, -3.2, 4.5, 0.566439, -12, -6.1, 0.566439, -12, -3.6, 0.566439, -0.7, -3.3, 0.566439, -0.3, -2.8, 0.566439, -0.7, 0, 0.566439, -0.7, 0.3, 0.566439, -0.5, 0.8, 0.566439, -0.5, 1.1, 0.566439, -0.7, 3.8, 0.566439, -2.9, 4, 0.566439, -3.2, -6.1, 0.566439, -12, -6.1, 0.566439, -3.3, -5.6, 0.566439, -3.2, -5.4, 0.566439, -2.9, -5.4, 0.566439, -0.7, -3.6, 0.566439, -0.7, -5.6, 0.566439, -3.2, -5.4, 0.566439, -2.9, -3.6, 0.566439, -0.7, -2.8, 0.566439, -0.7, 1.1, 0.566439, -0.7, 3.8, 0.566439, -0.7, 3.8, 0.566439, -2.9, 4, 0.566439, -3.2, 4.5, 0.566439, -3.3, 4.5, 0.566439, -12, 5.2, 0.566439, -3.1, 5.3, 0.566439, -2.3, 12, 0.566439, -2.4, 4.5, 0.566439, -3.3, 5.2, 0.566439, -3.1, 12, 0.566439, -2.4, 12, 0.566439, -12, 4.5, 0.566439, -12, -12, 0.566439, -0.4, -6.9, 0.566439, -0.5, -6.9, 0.566439, -2.3, -12, 0.566439, -2.4, 5.3, 0.566439, -2.3, 5.3, 0.566439, -0.2, 12, 0.566439, -0.0999994, 12, 0.566439, -2.4, -2.8, 0.566439, 0.8, -3.3, 0.566439, 0.400001, -3.6, 0.566439, 0.8, -0.0999994, 0.566439, 12, -6.8, 0.566439, 0.400001, -6.9, 0.566439, -0.5, -12, 0.566439, -0.4, -6.4, 0.566439, 0.8, -6.8, 0.566439, 0.400001, -12, 0.566439, -0.4, -12, 0.566439, 12, -0.0999994, 0.566439, 12, -0.0999994, 0.566439, 0.8, -2.8, 0.566439, 0.8, -0.0999994, 0.566439, 12, -3.6, 0.566439, 0.8, -6.4, 0.566439, 0.8, -12, 0.566439, 12, 12, 0.566439, -0.0999994, 5.3, 0.566439, -0.2, 5.3, 0.566439, 0.400001, 12, 0.566439, -0.0999994, 5.3, 0.566439, 0.400001, 5.1, 0.566439, 0.7, 4.1, 0.566439, 12, 12, 0.566439, 12, 5.1, 0.566439, 0.7, 4.1, 0.566439, 0.8, 4.1, 0.566439, 12, 0.7, 0.566439, 0, 0.400001, 0.566439, 0, 0.3, 0.566439, 0.6, 0.900001, 0.566439, 0.7, 1.9, 0.566439, 0.8, 0.900001, 0.566439, 0.7, -0.0999994, 0.566439, 0.8, -0.0999994, 0.566439, 12, 1.9, 0.566439, 12, 0.900001, 0.566439, 0.7, 0.3, 0.566439, 0.6, -0.0999994, 0.566439, 0.8, 1.9, 0.566439, 12, 4.1, 0.566439, 12, 4.1, 0.566439, 0.8, 1.9, 0.566439, 0.8)
@@ -42,11 +53,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
 
 [node name="Enemies" type="Node" parent="."]
-
-[node name="Enemy_spawn" type="MeshInstance3D" parent="Enemies"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
-mesh = SubResource("BoxMesh_bw4qg")
-skeleton = NodePath("../..")
 
 [node name="Spawner" type="Timer" parent="Enemies"]
 
@@ -89,6 +95,61 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.741016, 0.671488, 0, -0.671488, 0.741016, -0.0490508, 12.2559, 18.5063)
+
+[node name="attack_tower[TK]" parent="." instance=ExtResource("8_gvlpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.47148, -0.0209642, 5.28604)
+
+[node name="BridgeStone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9466, 1.90735e-06, 12.9864)
+mesh = ExtResource("9_28neo")
+
+[node name="BridgeStone2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9466, 1.90735e-06, 12.9864)
+mesh = ExtResource("9_28neo")
+
+[node name="BridgeSideWoodRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9466, 1.90735e-06, 12.9864)
+mesh = ExtResource("10_m1f5l")
+
+[node name="BridgeWood" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.9466, 1.90735e-06, 11.9864)
+mesh = ExtResource("11_yqtxr")
+
+[node name="CampfireStones" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9466, 1.90735e-06, 12.9864)
+mesh = ExtResource("12_frgsg")
+
+[node name="CliffBlockCaveStone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9466, 1.90735e-06, 13.9864)
+mesh = ExtResource("13_hdyig")
+
+[node name="CliffCornerInnerStone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9466, 1.90735e-06, 14.9864)
+mesh = ExtResource("14_wiwof")
+
+[node name="CropsDirtRowCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9466, 1.90735e-06, 13.9864)
+mesh = ExtResource("15_kk8je")
+
+[node name="FenceBendCenter" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9466, 1.90735e-06, 13.9864)
+mesh = ExtResource("16_hfn7h")
+
+[node name="PathStoneCircle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9466, 1.90735e-06, 16.9864)
+mesh = ExtResource("17_gt5w5")
+
+[node name="PathStone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9466, 1.90735e-06, 16.9864)
+mesh = ExtResource("18_orm1q")
+
+[node name="Pine-fall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9466, 1.90735e-06, 16.9864)
+mesh = ExtResource("19_yipof")
+
+[node name="PotLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9466, 1.90735e-06, 13.9864)
+mesh = ExtResource("20_y2nx1")
 
 [connection signal="pressed" from="debug_Game_UI/M/VB/Start" to="." method="_on_start_pressed"]
 [connection signal="ready" from="Enemies/Spawner" to="." method="_on_spawner_ready"]

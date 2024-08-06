@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://ccxsh1eiwpykx"]
 
-[ext_resource type="Texture2D" uid="uid://bkacdwbnlida" path="res://ui/scroll-removebg-preview (2) (1) (1).png" id="1_d6pft"]
-[ext_resource type="Texture2D" uid="uid://cij67fkcl4l8i" path="res://ui/texture-text/Start-7-23-2024.png" id="4_hbpdk"]
-[ext_resource type="Texture2D" uid="uid://cfpf1tahwx3aa" path="res://ui/scroll-removebg-preview (2).png" id="4_utfe5"]
-[ext_resource type="Texture2D" uid="uid://dxpk6u6mre36x" path="res://ui/texture-text/Settings-7-23-2024.png" id="5_c7pgc"]
-[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://ui/texture-text/Quit-7-23-2024.png" id="6_5lo7x"]
+[ext_resource type="Texture2D" uid="uid://bkacdwbnlida" path="res://UI/scroll-removebg-preview (2) (1) (1).png" id="1_d6pft"]
+[ext_resource type="Texture2D" uid="uid://cij67fkcl4l8i" path="res://UI/texture-text/Start-7-23-2024.png" id="4_hbpdk"]
+[ext_resource type="Texture2D" uid="uid://cfpf1tahwx3aa" path="res://UI/scroll-removebg-preview (2).png" id="4_utfe5"]
+[ext_resource type="Texture2D" uid="uid://dxpk6u6mre36x" path="res://UI/texture-text/Settings-7-23-2024.png" id="5_c7pgc"]
+[ext_resource type="Texture2D" uid="uid://b6on0eboundp7" path="res://UI/texture-text/Quit-7-23-2024.png" id="6_5lo7x"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

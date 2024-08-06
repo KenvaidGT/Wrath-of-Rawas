@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://ddcbjunj386k1"]
+
+[ext_resource type="Script" path="res://Towers_and_wall/attack_tower[TK]/attack_tower[tk].gd" id="1_fw7te"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rxt3l"]
+transparency = 1
+albedo_color = Color(0.364706, 0.364706, 0.364706, 0.25098)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_cyche"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kxees"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x7eeh"]
+albedo_color = Color(0.591518, 0.0697021, 0.447954, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4tlf5"]
+
+[node name="attack_tower[TK]" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0486932, -0.0423813, -0.0474433)
+script = ExtResource("1_fw7te")
+
+[node name="RadiusVisualizer" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 5, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_rxt3l")
+mesh = SubResource("CylinderMesh_cyche")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_kxees")
+surface_material_override/0 = SubResource("StandardMaterial3D_x7eeh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_4tlf5")
