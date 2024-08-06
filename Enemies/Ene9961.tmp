@@ -4,11 +4,11 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_4qt8o"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_iuay7"]
-radius = 0.363592
+[sub_resource type="BoxShape3D" id="BoxShape3D_r7pn0"]
 
 [node name="Gold_stealer" type="CharacterBody3D" groups=["Enemy"]]
 script = ExtResource("1_84avk")
+hp = null
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
@@ -16,4 +16,4 @@ script = ExtResource("1_84avk")
 mesh = SubResource("BoxMesh_4qt8o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_iuay7")
+shape = SubResource("BoxShape3D_r7pn0")
