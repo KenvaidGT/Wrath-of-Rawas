@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_algdg"]
 size = Vector3(1, 1.4364, 1)
 
-[node name="Gold_house" type="CharacterBody3D"]
+[node name="Gold_house" type="CharacterBody3D" groups=["Towers_and_wall"]]
 script = ExtResource("1_s4lm7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
