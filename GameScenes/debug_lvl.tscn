@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://4g75un8wa4in"]
+[gd_scene load_steps=12 format=3 uid="uid://4g75un8wa4in"]
 
 [ext_resource type="Script" path="res://GameScenes/debug_lvl.gd" id="1_ly31a"]
 [ext_resource type="PackedScene" uid="uid://cutkc7mmilbft" path="res://UI/debug_game_ui.tscn" id="2_by0yn"]
@@ -8,22 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://doumvi8pypvta" path="res://Towers_and_wall/main_house.tscn" id="5_pwapq"]
 [ext_resource type="PackedScene" uid="uid://be0ubwslris3e" path="res://Towers_and_wall/Wall.tscn" id="6_fk255"]
 [ext_resource type="PackedScene" uid="uid://ddcbjunj386k1" path="res://Towers_and_wall/attack_tower[TK]/attack_tower[tk].tscn" id="8_gvlpg"]
-[ext_resource type="ArrayMesh" uid="uid://yg4unmdo86p5" path="res://levels assets/Models/OBJ format/bridge_stone.obj" id="9_28neo"]
-[ext_resource type="ArrayMesh" uid="uid://tfpgrddo3eqj" path="res://levels assets/Models/OBJ format/bridge_side_woodRound.obj" id="10_m1f5l"]
-[ext_resource type="ArrayMesh" uid="uid://c0ip2a81mk7to" path="res://levels assets/Models/OBJ format/bridge_wood.obj" id="11_yqtxr"]
-[ext_resource type="ArrayMesh" uid="uid://dc80wuywftp7w" path="res://levels assets/Models/OBJ format/campfire_stones.obj" id="12_frgsg"]
-[ext_resource type="ArrayMesh" uid="uid://bqx3ey1wla4dh" path="res://levels assets/Models/OBJ format/cliff_blockCave_stone.obj" id="13_hdyig"]
-[ext_resource type="ArrayMesh" uid="uid://rlcyelm5fuu0" path="res://levels assets/Models/OBJ format/cliff_cornerInner_stone.obj" id="14_wiwof"]
-[ext_resource type="ArrayMesh" uid="uid://dalad3c7kxahw" path="res://levels assets/Models/OBJ format/crops_dirtRowCorner.obj" id="15_kk8je"]
-[ext_resource type="ArrayMesh" uid="uid://ocx1mecd5edx" path="res://levels assets/Models/OBJ format/fence_bendCenter.obj" id="16_hfn7h"]
-[ext_resource type="ArrayMesh" uid="uid://dncfqs5rwysnn" path="res://levels assets/Models/OBJ format/path_stoneCircle.obj" id="17_gt5w5"]
-[ext_resource type="ArrayMesh" uid="uid://u8be6cibauw4" path="res://levels assets/Models/OBJ format/path_stone.obj" id="18_orm1q"]
-[ext_resource type="ArrayMesh" uid="uid://dqlofmhdyihfl" path="res://levels assets/Models/OBJ format/pine-fall.obj" id="19_yipof"]
-[ext_resource type="ArrayMesh" uid="uid://c4vbdrev4cv8d" path="res://levels assets/Models/OBJ format/pot_large.obj" id="20_y2nx1"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_lrl38"]
-vertices = PackedVector3Array(-12, 0.566439, -2.4, -6.9, 0.566439, -2.3, -6.8, 0.566439, -3.1, -12, 0.566439, -2.4, -6.8, 0.566439, -3.1, -6.1, 0.566439, -3.3, -6.1, 0.566439, -12, -12, 0.566439, -12, -2.6, 0.566439, -0.7, -2.4, 0.566439, -0.5, -2.1, 0.566439, -0.7, -5.4, 0.566439, -2.9, -5.4, 0.566439, -0.7, -2.6, 0.566439, -0.7, -5.6, 0.566439, -3.2, -5.4, 0.566439, -2.9, -2.6, 0.566439, -0.7, -2.1, 0.566439, -0.7, -6.1, 0.566439, -12, -6.1, 0.566439, -3.3, -5.6, 0.566439, -3.2, -2.1, 0.566439, -0.7, 3.8, 0.566439, -0.7, 3.8, 0.566439, -2.9, -2.1, 0.566439, -0.7, 3.8, 0.566439, -2.9, 4, 0.566439, -3.2, 4.5, 0.566439, -12, -6.1, 0.566439, -12, -5.6, 0.566439, -3.2, 4, 0.566439, -3.2, 4.5, 0.566439, -3.3, 4.5, 0.566439, -12, 5.2, 0.566439, -3.1, 5.3, 0.566439, -2.3, 12, 0.566439, -2.4, 4.5, 0.566439, -3.3, 5.2, 0.566439, -3.1, 12, 0.566439, -2.4, 12, 0.566439, -12, 4.5, 0.566439, -12, -12, 0.566439, -0.599999, -6.9, 0.566439, -0.7, -6.9, 0.566439, -2.3, -12, 0.566439, -2.4, 5.3, 0.566439, -2.3, 5.3, 0.566439, -0.2, 12, 0.566439, -0.0999994, 12, 0.566439, -2.4, -5.7, 0.566439, 0.6, -5.8, 0.566439, 0.3, -6.7, 0.566439, 0.2, -5.3, 0.566439, 0.8, -5.7, 0.566439, 0.6, -6.7, 0.566439, 0.2, -12, 0.566439, -0.599999, -12, 0.566439, 12, -5.3, 0.566439, 12, -6.9, 0.566439, -0.0999994, -6.9, 0.566439, -0.7, -12, 0.566439, -0.599999, -6.7, 0.566439, 0.2, -6.9, 0.566439, -0.0999994, -12, 0.566439, -0.599999, 12, 0.566439, -0.0999994, 5.3, 0.566439, -0.2, 5.2, 0.566439, 0.6, 12, 0.566439, -0.0999994, 5.2, 0.566439, 0.6, 4.8, 0.566439, 0.8, 4.8, 0.566439, 12, 12, 0.566439, 12, -2.1, 0.566439, 0.8, -2.4, 0.566439, 0.6, -2.6, 0.566439, 0.8, -5.3, 0.566439, 12, -2.6, 0.566439, 0.8, -5.3, 0.566439, 0.8, -5.3, 0.566439, 12, 4.8, 0.566439, 12, 4.8, 0.566439, 0.8, -2.1, 0.566439, 0.8, -5.3, 0.566439, 12)
-polygons = [PackedInt32Array(0, 2, 1), PackedInt32Array(4, 3, 5), PackedInt32Array(5, 3, 6), PackedInt32Array(6, 3, 7), PackedInt32Array(10, 9, 8), PackedInt32Array(13, 12, 11), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 17), PackedInt32Array(20, 19, 18), PackedInt32Array(23, 22, 21), PackedInt32Array(25, 24, 26), PackedInt32Array(26, 24, 29), PackedInt32Array(26, 29, 28), PackedInt32Array(26, 28, 27), PackedInt32Array(32, 31, 30), PackedInt32Array(35, 34, 33), PackedInt32Array(37, 36, 38), PackedInt32Array(38, 36, 40), PackedInt32Array(38, 40, 39), PackedInt32Array(42, 41, 43), PackedInt32Array(43, 41, 44), PackedInt32Array(45, 48, 46), PackedInt32Array(46, 48, 47), PackedInt32Array(50, 49, 51), PackedInt32Array(53, 52, 54), PackedInt32Array(54, 52, 55), PackedInt32Array(55, 52, 57), PackedInt32Array(55, 57, 56), PackedInt32Array(60, 59, 58), PackedInt32Array(63, 62, 61), PackedInt32Array(64, 66, 65), PackedInt32Array(68, 67, 69), PackedInt32Array(69, 67, 70), PackedInt32Array(70, 67, 71), PackedInt32Array(73, 72, 74), PackedInt32Array(74, 72, 75), PackedInt32Array(76, 78, 77), PackedInt32Array(80, 79, 81), PackedInt32Array(81, 79, 82)]
+vertices = PackedVector3Array(-12, 0.566439, -2.4, -6.9, 0.566439, -2.3, -6.8, 0.566439, -3.1, -12, 0.566439, -2.4, -6.8, 0.566439, -3.1, -6.1, 0.566439, -3.3, -6.1, 0.566439, -12, -12, 0.566439, -12, -2.6, 0.566439, -0.7, -2.4, 0.566439, -0.5, -2.1, 0.566439, -0.7, -5.4, 0.566439, -2.9, -5.4, 0.566439, -0.7, -2.6, 0.566439, -0.7, -5.6, 0.566439, -3.2, -5.4, 0.566439, -2.9, -2.6, 0.566439, -0.7, -2.1, 0.566439, -0.7, -6.1, 0.566439, -12, -6.1, 0.566439, -3.3, -5.6, 0.566439, -3.2, -2.1, 0.566439, -0.7, 3.8, 0.566439, -0.7, 3.8, 0.566439, -2.9, -2.1, 0.566439, -0.7, 3.8, 0.566439, -2.9, 4, 0.566439, -3.2, 4.5, 0.566439, -12, -6.1, 0.566439, -12, -5.6, 0.566439, -3.2, 4, 0.566439, -3.2, 4.5, 0.566439, -3.3, 4.5, 0.566439, -12, 5.2, 0.566439, -3.1, 5.3, 0.566439, -2.3, 12, 0.566439, -2.4, 4.5, 0.566439, -3.3, 5.2, 0.566439, -3.1, 12, 0.566439, -2.4, 12, 0.566439, -12, 4.5, 0.566439, -12, -12, 0.566439, -0.0999994, -6.9, 0.566439, -0.2, -6.9, 0.566439, -2.3, -12, 0.566439, -2.4, 5.3, 0.566439, -2.3, 5.3, 0.566439, -0.2, 12, 0.566439, -0.0999994, 12, 0.566439, -2.4, -2.1, 0.566439, 0.8, -2.4, 0.566439, 0.6, -2.6, 0.566439, 0.8, 4.8, 0.566439, 12, -6.9, 0.566439, 0.400001, -6.9, 0.566439, -0.2, -12, 0.566439, -0.0999994, -6.5, 0.566439, 0.8, -6.9, 0.566439, 0.400001, -12, 0.566439, -0.0999994, -12, 0.566439, 12, -12, 0.566439, 12, 4.8, 0.566439, 12, -2.6, 0.566439, 0.8, -6.5, 0.566439, 0.8, 4.8, 0.566439, 12, 4.8, 0.566439, 0.8, -2.1, 0.566439, 0.8, 12, 0.566439, -0.0999994, 5.3, 0.566439, -0.2, 5.2, 0.566439, 0.6, 12, 0.566439, -0.0999994, 5.2, 0.566439, 0.6, 4.8, 0.566439, 0.8, 4.8, 0.566439, 12, 12, 0.566439, 12)
+polygons = [PackedInt32Array(0, 2, 1), PackedInt32Array(4, 3, 5), PackedInt32Array(5, 3, 6), PackedInt32Array(6, 3, 7), PackedInt32Array(10, 9, 8), PackedInt32Array(13, 12, 11), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 17), PackedInt32Array(20, 19, 18), PackedInt32Array(23, 22, 21), PackedInt32Array(25, 24, 26), PackedInt32Array(26, 24, 29), PackedInt32Array(26, 29, 28), PackedInt32Array(26, 28, 27), PackedInt32Array(32, 31, 30), PackedInt32Array(35, 34, 33), PackedInt32Array(37, 36, 38), PackedInt32Array(38, 36, 40), PackedInt32Array(38, 40, 39), PackedInt32Array(42, 41, 43), PackedInt32Array(43, 41, 44), PackedInt32Array(45, 48, 46), PackedInt32Array(46, 48, 47), PackedInt32Array(50, 49, 51), PackedInt32Array(51, 49, 52), PackedInt32Array(55, 54, 53), PackedInt32Array(57, 56, 58), PackedInt32Array(58, 56, 59), PackedInt32Array(63, 62, 60), PackedInt32Array(60, 62, 61), PackedInt32Array(66, 65, 64), PackedInt32Array(67, 69, 68), PackedInt32Array(71, 70, 72), PackedInt32Array(72, 70, 73), PackedInt32Array(73, 70, 74)]
 cell_size = 0.1
 cell_height = 1.0
 
@@ -62,7 +50,7 @@ navigation_mesh = SubResource("NavigationMesh_lrl38")
 travel_cost = 100.0
 
 [node name="Wall7" parent="NavigationRegion3D" instance=ExtResource("6_fk255")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.60651, 0.196883, 0.00961112)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.56436, 0.196883, 0.00961112)
 
 [node name="Wall2" parent="NavigationRegion3D" instance=ExtResource("6_fk255")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.680584, 0.0984415, 0.00480556)
@@ -102,62 +90,11 @@ transform = Transform3D(1, 0, 0, 0, 0.741016, 0.671488, 0, -0.671488, 0.741016, 
 [node name="attack_tower[TK]" parent="." instance=ExtResource("8_gvlpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.47148, -0.0209642, 5.28604)
 
-[node name="BridgeStone" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9466, 1.90735e-06, 12.9864)
-mesh = ExtResource("9_28neo")
-
-[node name="BridgeStone2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9466, 1.90735e-06, 12.9864)
-mesh = ExtResource("9_28neo")
-
-[node name="BridgeSideWoodRound" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9466, 1.90735e-06, 12.9864)
-mesh = ExtResource("10_m1f5l")
-
-[node name="BridgeWood" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.9466, 1.90735e-06, 11.9864)
-mesh = ExtResource("11_yqtxr")
-
-[node name="CampfireStones" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9466, 1.90735e-06, 12.9864)
-mesh = ExtResource("12_frgsg")
-
-[node name="CliffBlockCaveStone" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9466, 1.90735e-06, 13.9864)
-mesh = ExtResource("13_hdyig")
-
-[node name="CliffCornerInnerStone" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9466, 1.90735e-06, 14.9864)
-mesh = ExtResource("14_wiwof")
-
-[node name="CropsDirtRowCorner" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9466, 1.90735e-06, 13.9864)
-mesh = ExtResource("15_kk8je")
-
-[node name="FenceBendCenter" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9466, 1.90735e-06, 13.9864)
-mesh = ExtResource("16_hfn7h")
-
-[node name="PathStoneCircle" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9466, 1.90735e-06, 16.9864)
-mesh = ExtResource("17_gt5w5")
-
-[node name="PathStone" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9466, 1.90735e-06, 16.9864)
-mesh = ExtResource("18_orm1q")
-
-[node name="Pine-fall" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9466, 1.90735e-06, 16.9864)
-mesh = ExtResource("19_yipof")
-
-[node name="PotLarge" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9466, 1.90735e-06, 13.9864)
-mesh = ExtResource("20_y2nx1")
-
 [connection signal="pressed" from="debug_Game_UI/M/VB/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="debug_Game_UI/M/VB2/Wall" to="." method="_on_wall_pressed"]
 [connection signal="ready" from="Enemies/Spawner" to="." method="_on_spawner_ready"]
 [connection signal="timeout" from="Enemies/Spawner" to="." method="_on_spawner_timeout"]
+[connection signal="bake_finished" from="NavigationRegion3D" to="." method="_on_navigation_region_3d_bake_finished"]
 [connection signal="navigation_mesh_changed" from="NavigationRegion3D" to="." method="_on_navigation_region_3d_navigation_mesh_changed"]
 
 [editable path="debug_Game_UI"]

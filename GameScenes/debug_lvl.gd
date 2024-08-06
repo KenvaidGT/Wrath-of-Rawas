@@ -8,7 +8,7 @@ extends Node3D
 @onready var enemy_container: Node3D = $Enemy
 @onready var timer = $Enemies/Spawner
 @onready var timer2 = $Enemies/Spawner2
-@onready var game_ui = $debug_Game_UI 
+@onready var game_ui = $debug_Game_UI
 @onready var nav_region = $NavigationRegion3D
 
 var a = 0
@@ -22,7 +22,7 @@ func _physics_process(_delta):
 	get_tree().call_group("Enemy", "update_target_location", mana_house.global_transform.origin)
 	get_tree().call_group("Enemy", "update_target_location", gold_house.global_transform.origin)
 	get_tree().call_group("Enemy", "update_target_location", main_house.global_transform.origin)
-	
+
 func _on_start_pressed():
 	timer.start()
 
@@ -44,10 +44,10 @@ func _on_wall_pressed():
 	_on_navigation_region_3d_navigation_mesh_changed()
 
 func _on_navigation_region_3d_navigation_mesh_changed():
-	var new_mesh = NavigationMesh.new()
-	change_navigation_mesh(new_mesh)
+	if nav_region:
+		bake_navigation_mesh()
+		print("Navigation mesh has been baked and updated")
 
-func change_navigation_mesh(new_mesh: NavigationMesh):
-	nav_region.navigation_mesh = new_mesh
-	nav_region.update_navigation_mesh()
-	print("Navigation mesh has been updated")
+func bake_navigation_mesh():
+	if nav_region:
+		nav_region.bake_navigation_mesh()
