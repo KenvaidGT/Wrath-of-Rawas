@@ -49,9 +49,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.385036, -0.06075, 0.013830
 navigation_mesh = SubResource("NavigationMesh_lrl38")
 travel_cost = 100.0
 
-[node name="Wall7" parent="NavigationRegion3D" instance=ExtResource("6_fk255")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.56436, 0.196883, 0.00961112)
-
 [node name="Wall2" parent="NavigationRegion3D" instance=ExtResource("6_fk255")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.680584, 0.0984415, 0.00480556)
 

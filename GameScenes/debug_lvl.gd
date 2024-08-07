@@ -1,15 +1,15 @@
 extends Node3D
 
-@onready var mana_house = $Towers/Mana_house
-@onready var main_house = $Towers/Main_house
-@onready var gold_house = $Towers/Gold_house
+@onready var mana_house: Node3D = $Towers/Mana_house
+@onready var main_house: Node3D = $Towers/Main_house
+@onready var gold_house: Node3D = $Towers/Gold_house
 @onready var lose_ui: Control = $EndGameUI
 @onready var win_ui: Control = $WinGameUI
-@onready var enemy_container: Node3D = $Enemy
-@onready var timer = $Enemies/Spawner
-@onready var timer2 = $Enemies/Spawner2
-@onready var game_ui = $debug_Game_UI
-@onready var nav_region = $NavigationRegion3D
+@onready var enemy_container: Node3D = $Enemies
+@onready var timer: Timer = $Enemies/Spawner
+@onready var timer2: Timer = $Enemies/Spawner2
+@onready var game_ui: Node = $debug_Game_UI
+@onready var nav_region: NavigationRegion3D = $NavigationRegion3D
 
 var a = 0
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
@@ -19,9 +19,9 @@ func _ready():
 	nav_region.connect("navigation_mesh_changed", Callable(self, "_on_navigation_region_3d_navigation_mesh_changed"))
 
 func _physics_process(_delta):
-	get_tree().call_group("Enemy", "update_target_location", mana_house.global_transform.origin)
-	get_tree().call_group("Enemy", "update_target_location", gold_house.global_transform.origin)
-	get_tree().call_group("Enemy", "update_target_location", main_house.global_transform.origin)
+	get_tree().call_group("enemies", "update_target_location", mana_house.global_transform.origin)
+	get_tree().call_group("enemies", "update_target_location", main_house.global_transform.origin)
+	get_tree().call_group("enemies", "update_target_location", gold_house.global_transform.origin)
 
 func _on_start_pressed():
 	timer.start()
@@ -33,9 +33,9 @@ func _on_spawner_timeout():
 		timer.stop()
 
 func spawn_enemy():
-	var enemy = enemy_preload.instantiate()
+	var enemy = enemy_preload.instantiate() as CharacterBody3D
 	enemy.position = Vector3(-4, 0, -8)
-	$Enemies.add_child(enemy)
+	enemy_container.add_child(enemy)
 
 func _on_enemy_changed(new_value):
 	a = new_value
