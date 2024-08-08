@@ -6,10 +6,11 @@ extends CharacterBody3D
 @export var hp: float = 100.0
 @export var ATK: int = 3
 @export var attack_radius: float = 5.0
+@export var avoid_radius: float = 2.0  
+@export var gravity: float = -9.8
 
 var towers = []
 var attack_timer: Timer
-var avoidance_radius: float = 1.0
 
 func take_damage(amount: float):
 	hp -= amount
@@ -23,34 +24,34 @@ func die():
 	queue_free()
 
 func _ready():
-	add_to_group("enemies")
+	add_to_group("Enemy")
 	attack_timer = Timer.new()
 	attack_timer.wait_time = 1.0
 	attack_timer.one_shot = false
 	attack_timer.autostart = true
 	add_child(attack_timer)
-	
-	nav_agent.avoidance_enabled = true
-	nav_agent.radius = avoidance_radius
 
 func _process(delta: float):
+	velocity.y += gravity * delta
+
 	if nav_agent.is_navigation_finished():
 		return
-	
+
 	var next_location = nav_agent.get_next_path_position()
 	var current_location = global_transform.origin
 	var new_velocity = (next_location - current_location).normalized() * speed
 
-	velocity = velocity.move_toward(new_velocity, delta * speed)
-
-	for enemy in get_tree().get_nodes_in_group("enemies"):
+	var avoid_force = Vector3.ZERO
+	for enemy in get_tree().get_nodes_in_group("Enemy"):
 		if enemy == self:
 			continue
-		var distance_to_enemy = global_transform.origin.distance_to(enemy.global_transform.origin)
-		if distance_to_enemy < avoidance_radius:
-			var avoidance_vector = (global_transform.origin - enemy.global_transform.origin).normalized()
-			velocity += avoidance_vector * speed * delta
+		var distance = current_location.distance_to(enemy.global_transform.origin)
+		if distance < avoid_radius:
+			avoid_force += (current_location - enemy.global_transform.origin).normalized() * (avoid_radius - distance)
 
+	new_velocity += avoid_force.normalized() * speed
+
+	velocity = velocity.move_toward(new_velocity, delta * speed)
 	move_and_slide()
 
 func update_target_location(target_location: Vector3):
