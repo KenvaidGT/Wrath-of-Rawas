@@ -1,0 +1,322 @@
+[gd_scene load_steps=11 format=3 uid="uid://d3mv34sane65o"]
+
+[ext_resource type="Script" path="res://UI/game_ui.gd" id="1_1jjxq"]
+[ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://ui/wave_ui.tscn" id="2_d73ce"]
+[ext_resource type="PackedScene" uid="uid://35rty2hrer4y" path="res://GameScenes/EndGameMenu.tscn" id="3_l2qm8"]
+[ext_resource type="Texture2D" uid="uid://c2vl3q33q5q17" path="res://ui/images.jpg" id="4_wo251"]
+[ext_resource type="Texture2D" uid="uid://kd7knkjom1x8" path="res://ui/scroll9-removebg-preview (1).png" id="5_a4ba4"]
+[ext_resource type="Texture2D" uid="uid://dsfg6oll0yc2" path="res://ui/buttons/button_round_line.png" id="6_g3frj"]
+[ext_resource type="FontFile" uid="uid://cvbxxusqgo8m7" path="res://ui/Font/YatraOne-Regular.ttf" id="7_mulnp"]
+[ext_resource type="Texture2D" uid="uid://bn4cb00cobami" path="res://ui/buttons/button_square_depth_border.png" id="7_nb0p8"]
+[ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://ui/scroll-removebg-preview.png" id="8_kc531"]
+[ext_resource type="FontFile" uid="uid://vevipi8e1nnw" path="res://ui/Font/Jacquard12-Regular.ttf" id="9_8fuum"]
+
+[node name="debug_Game_UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1jjxq")
+
+[node name="wave_UI" parent="." instance=ExtResource("2_d73ce")]
+visible = false
+layout_mode = 1
+
+[node name="EndGameUI" parent="." instance=ExtResource("3_l2qm8")]
+visible = false
+layout_mode = 1
+
+[node name="T" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 0.188235)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+offset_right = 71.0
+offset_bottom = 643.0
+rotation = -6.28319
+texture = ExtResource("4_wo251")
+expand_mode = 1
+
+[node name="T2" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 0.188235)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 0
+offset_left = 1199.0
+offset_right = 1280.0
+offset_bottom = 207.0
+rotation = -6.28319
+texture = ExtResource("4_wo251")
+expand_mode = 1
+
+[node name="M" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VB" type="VBoxContainer" parent="M"]
+custom_minimum_size = Vector2(200, 150)
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="Start" type="TextureButton" parent="M/VB"]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("5_a4ba4")
+texture_pressed = ExtResource("6_g3frj")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="M/VB/Start"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = -11.5
+offset_right = 19.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start"
+
+[node name="to menu" type="TextureButton" parent="M/VB"]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("5_a4ba4")
+texture_pressed = ExtResource("6_g3frj")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="M/VB/to menu"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = -11.5
+offset_right = 19.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "pause"
+
+[node name="VB2" type="VBoxContainer" parent="M"]
+custom_minimum_size = Vector2(60, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Tower1" type="TextureButton" parent="M/VB2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("5_a4ba4")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="M/VB2/Tower1"]
+modulate = Color(0.916098, 2.98411e-06, 0.56446, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -48.0
+offset_right = 37.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("7_mulnp")
+text = "Tower1"
+
+[node name="Tower2" type="TextureButton" parent="M/VB2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("5_a4ba4")
+
+[node name="Label" type="Label" parent="M/VB2/Tower2"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.0
+offset_top = -48.0
+offset_right = 38.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("7_mulnp")
+text = "Tower2"
+
+[node name="Tower3" type="TextureButton" parent="M/VB2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("5_a4ba4")
+texture_pressed = ExtResource("7_nb0p8")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="M/VB2/Tower3"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -46.0
+offset_right = 41.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("9_8fuum")
+text = "Tower3"
+
+[node name="Enemy_+1" type="TextureButton" parent="M/VB2"]
+layout_mode = 2
+texture_normal = ExtResource("5_a4ba4")
+
+[node name="Label" type="Label" parent="M/VB2/Enemy_+1"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -48.0
+offset_right = 54.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("9_8fuum")
+text = "Enemy +1"
+
+[node name="Delete_tower" type="TextureButton" parent="M/VB2"]
+layout_mode = 2
+texture_normal = ExtResource("5_a4ba4")
+
+[node name="Label" type="Label" parent="M/VB2/Delete_tower"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -48.0
+offset_right = 61.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("7_mulnp")
+text = "Delet tower"
+
+[node name="Wall" type="TextureButton" parent="M/VB2"]
+layout_mode = 2
+texture_normal = ExtResource("5_a4ba4")
+
+[node name="Label" type="Label" parent="M/VB2/Wall"]
+modulate = Color(0.917647, 0, 0.564706, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -47.0
+offset_right = 22.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("7_mulnp")
+text = "Wall"
+
+[node name="Scroll-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(1214, 697)
+scale = Vector2(0.215686, 0.112745)
+texture = ExtResource("8_kc531")
+
+[node name="Label" type="Label" parent="Scroll-removebg-preview2"]
+offset_left = -180.818
+offset_top = -168.522
+offset_right = 170.182
+offset_bottom = -7.52188
+theme_override_colors/font_color = Color(0, 0.882353, 0.878431, 1)
+theme_override_fonts/font = ExtResource("9_8fuum")
+theme_override_font_sizes/font_size = 160
+text = "Mana"
+
+[node name="Scroll-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(1084, 697)
+scale = Vector2(0.21732, 0.11152)
+texture = ExtResource("8_kc531")
+
+[node name="Label" type="Label" parent="Scroll-removebg-preview"]
+offset_left = -147.0
+offset_top = -170.0
+offset_right = 129.0
+offset_bottom = -9.0
+theme_override_colors/font_color = Color(0.92549, 0.74902, 0.254902, 1)
+theme_override_fonts/font = ExtResource("9_8fuum")
+theme_override_font_sizes/font_size = 160
+text = "Gold"
+
+[node name="Scroll-removebg-preview3" type="Sprite2D" parent="."]
+position = Vector2(954, 696.375)
+scale = Vector2(0.21732, 0.114583)
+texture = ExtResource("8_kc531")
+
+[node name="Label" type="Label" parent="Scroll-removebg-preview3"]
+offset_left = -110.436
+offset_top = -177.818
+offset_right = 101.564
+offset_bottom = -16.8184
+theme_override_colors/font_color = Color(1, 0.141176, 0, 1)
+theme_override_fonts/font = ExtResource("9_8fuum")
+theme_override_font_sizes/font_size = 160
+text = "HP"
+
+[connection signal="pressed" from="M/VB/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="M/VB/to menu" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="M/VB2/Tower1" to="." method="_on_tower_1_pressed"]
+[connection signal="pressed" from="M/VB2/Tower2" to="." method="_on_tower_2_pressed"]
+[connection signal="pressed" from="M/VB2/Tower3" to="." method="_on_tower_3_pressed"]
+[connection signal="pressed" from="M/VB2/Enemy_+1" to="." method="_on_enemy_1_pressed"]
+[connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_turret_pressed"]
+[connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_tower_pressed"]
+[connection signal="pressed" from="M/VB2/Wall" to="." method="_on_wall_pressed"]
