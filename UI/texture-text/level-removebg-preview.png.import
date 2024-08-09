@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://030xoju4srwd"
-path="res://.godot/imported/level-removebg-preview.png-2dccaa9cdc3ca337d4423e2b97046b39.ctex"
+path="res://.godot/imported/level-removebg-preview.png-6d9e933bd3cfe04dd2221a1c08b97c20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/texture-text/level-removebg-preview.png"
-dest_files=["res://.godot/imported/level-removebg-preview.png-2dccaa9cdc3ca337d4423e2b97046b39.ctex"]
+source_file="res://ui/texture-text/level-removebg-preview.png"
+dest_files=["res://.godot/imported/level-removebg-preview.png-6d9e933bd3cfe04dd2221a1c08b97c20.ctex"]
 
 [params]
 
