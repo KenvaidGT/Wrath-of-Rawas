@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+
 @onready var nav_agent = $NavigationAgent3D
 
 @export var speed: float = 3.0
