@@ -186,7 +186,6 @@ layout_mode = 1
 [connection signal="pressed" from="VB3/Steal Mana" to="." method="_on_steal_mana_pressed"]
 [connection signal="pressed" from="VB3/Lose" to="." method="_on_lose_pressed"]
 [connection signal="pressed" from="VB3/Win" to="." method="_on_win_pressed"]
-[connection signal="pressed" from="WinGameUI/VBoxContainer/MainMenu button" to="." method="_on_main_menu_button_pressed"]
 
 [editable path="EndGameUI"]
 [editable path="WinGameUI"]

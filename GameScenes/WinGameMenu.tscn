@@ -26,6 +26,22 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rb66c")
 
+[node name="TextureBox" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 0.188235)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -6.0
+offset_right = 1.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lpqmn")
+expand_mode = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(343.33, 120.905)
 layout_mode = 1
@@ -43,13 +59,6 @@ grow_vertical = 2
 scale = Vector2(0.39, 0.39)
 size_flags_horizontal = 4
 size_flags_vertical = 0
-
-[node name="TextureBox" type="TextureRect" parent="VBoxContainer"]
-modulate = Color(0, 0, 0, 0.188235)
-custom_minimum_size = Vector2(0, 150)
-layout_mode = 2
-texture = ExtResource("2_lpqmn")
-expand_mode = 1
 
 [node name="MainMenu button" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
@@ -71,12 +80,12 @@ label_settings = SubResource("LabelSettings_g7y4k")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Lost label" type="Label" parent="."]
+[node name="Win label" type="Label" parent="."]
 layout_mode = 2
-offset_left = 330.305
-offset_top = 94.53
-offset_right = 942.306
-offset_bottom = 218.53
+offset_left = 250.0
+offset_top = 58.0
+offset_right = 1030.0
+offset_bottom = 292.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "You Won!"

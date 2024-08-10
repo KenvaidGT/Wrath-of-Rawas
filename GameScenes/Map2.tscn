@@ -1,3 +1,47 @@
-[gd_scene format=3 uid="uid://camgk4dn4yj26"]
+[gd_scene load_steps=6 format=3 uid="uid://camgk4dn4yj26"]
 
-[node name="Map2" type="Node3D"]
+[ext_resource type="Script" path="res://GameScenes/ScriptManager.gd" id="1_233ro"]
+[ext_resource type="PackedScene" uid="uid://r0usejbkxvci" path="res://UI/placeable_towers_ui.tscn" id="2_7f0hr"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_beh8v"]
+vertices = PackedVector3Array(-12, 0.566439, -12, -12, 0.566439, 12, 12, 0.566439, 12, 12, 0.566439, -12)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+cell_size = 0.1
+cell_height = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_dpaxp"]
+size = Vector3(25, 1, 25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mfijh"]
+size = Vector3(25, 0.5, 25)
+
+[node name="Level2 Map" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.75, -0.43301, -8.02621, 6.27007, -0.0453875)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.822174, 0.569236, 0, -0.569236, 0.822174, 0.00998783, 8.11789, 12.8801)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.385036, -0.06075, 0.0138302)
+navigation_mesh = SubResource("NavigationMesh_beh8v")
+travel_cost = 100.0
+
+[node name="PlaneMesh" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.916457, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/PlaneMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0171044, 0)
+mesh = SubResource("BoxMesh_dpaxp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/PlaneMesh"]
+shape = SubResource("BoxShape3D_mfijh")
+
+[node name="ScriptManager" type="Node3D" parent="."]
+script = ExtResource("1_233ro")
+
+[node name="PlaceableTowersUI" parent="." instance=ExtResource("2_7f0hr")]
+
+[editable path="PlaceableTowersUI"]
