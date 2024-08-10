@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://r0usejbkxvci"]
+[gd_scene load_steps=4 format=3 uid="uid://r0usejbkxvci"]
 
 [ext_resource type="Texture2D" uid="uid://c2vl3q33q5q17" path="res://UI/images.jpg" id="1_jksyy"]
 [ext_resource type="Script" path="res://UI/placeable_towers_ui.gd" id="1_p6se4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xfbue"]
 
 [node name="PlaceableTowersUI" type="Control"]
 layout_mode = 3
@@ -64,6 +66,39 @@ custom_minimum_size = Vector2(138, 138)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 52.0
+offset_top = 688.0
+offset_right = 86.0
+offset_bottom = 711.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Wall"
+label_settings = SubResource("LabelSettings_xfbue")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+offset_left = 184.0
+offset_top = 688.0
+offset_right = 242.0
+offset_bottom = 711.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Tower1"
+label_settings = SubResource("LabelSettings_xfbue")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+offset_left = 324.0
+offset_top = 688.0
+offset_right = 382.0
+offset_bottom = 711.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Tower2"
+label_settings = SubResource("LabelSettings_xfbue")
 
 [connection signal="button_down" from="TextureBox/BoxContainer/VBoxContainer/Wall Button" to="." method="_on_wall_button_button_down"]
 [connection signal="button_up" from="TextureBox/BoxContainer/VBoxContainer/Wall Button" to="." method="_on_wall_button_button_up"]
