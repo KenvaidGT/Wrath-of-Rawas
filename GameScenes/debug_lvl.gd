@@ -10,6 +10,7 @@ extends Node3D
 @onready var timer2 = $Enemies/Spawner2
 @onready var game_ui = $debug_Game_UI
 @onready var nav_region = $NavigationRegion3D
+var b = 0
 
 var a = 0
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
@@ -49,5 +50,8 @@ func _on_navigation_region_3d_navigation_mesh_changed():
 		print("Navigation mesh has been baked and updated")
 
 func bake_navigation_mesh():
+	b += 1
 	if nav_region:
 		nav_region.bake_navigation_mesh()
+	elif b >= 5:
+		return
