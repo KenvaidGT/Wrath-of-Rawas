@@ -153,7 +153,7 @@ grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_mulnp")
-text = "Tower1"
+text = "Ballista"
 
 [node name="Tower2" type="TextureButton" parent="M/VB2"]
 custom_minimum_size = Vector2(50, 50)
@@ -178,7 +178,7 @@ grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_mulnp")
-text = "Tower2"
+text = "magic"
 
 [node name="Tower3" type="TextureButton" parent="M/VB2"]
 custom_minimum_size = Vector2(50, 50)
@@ -204,8 +204,8 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_8fuum")
-text = "Tower3"
+theme_override_fonts/font = ExtResource("7_mulnp")
+text = "catapult"
 
 [node name="level up" type="TextureButton" parent="M/VB2"]
 layout_mode = 2
@@ -227,7 +227,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_8fuum")
+theme_override_fonts/font = ExtResource("7_mulnp")
 text = "level up
 "
 
@@ -252,7 +252,7 @@ grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_mulnp")
-text = "Delet tower"
+text = "demonolish"
 
 [node name="Wall" type="TextureButton" parent="M/VB2"]
 layout_mode = 2
@@ -283,14 +283,14 @@ scale = Vector2(0.215686, 0.112745)
 texture = ExtResource("8_kc531")
 
 [node name="Label" type="Label" parent="Scroll-removebg-preview2"]
-offset_left = -180.818
-offset_top = -168.522
-offset_right = 170.182
-offset_bottom = -7.52188
+offset_left = -208.637
+offset_top = -177.392
+offset_right = 263.363
+offset_bottom = 53.6084
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0.823529, 0.917647, 1)
 theme_override_fonts/font = ExtResource("9_8fuum")
-theme_override_font_sizes/font_size = 160
+theme_override_font_sizes/font_size = 195
 text = "Mana"
 
 [node name="Scroll-removebg-preview" type="Sprite2D" parent="."]
@@ -299,14 +299,14 @@ scale = Vector2(0.21732, 0.11152)
 texture = ExtResource("8_kc531")
 
 [node name="Label" type="Label" parent="Scroll-removebg-preview"]
-offset_left = -147.0
-offset_top = -170.0
-offset_right = 129.0
-offset_bottom = -9.0
+offset_left = -151.85
+offset_top = -188.307
+offset_right = 173.15
+offset_bottom = 7.69273
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.784314, 0.694118, 0.286275, 1)
 theme_override_fonts/font = ExtResource("9_8fuum")
-theme_override_font_sizes/font_size = 160
+theme_override_font_sizes/font_size = 195
 text = "Gold"
 
 [node name="Scroll-removebg-preview3" type="Sprite2D" parent="."]
@@ -315,14 +315,14 @@ scale = Vector2(0.21732, 0.114583)
 texture = ExtResource("8_kc531")
 
 [node name="Label" type="Label" parent="Scroll-removebg-preview3"]
-offset_left = -110.436
-offset_top = -177.818
-offset_right = 101.564
-offset_bottom = -16.8184
+offset_left = -133.444
+offset_top = -186.546
+offset_right = 151.556
+offset_bottom = 36.4542
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("9_8fuum")
-theme_override_font_sizes/font_size = 160
+theme_override_font_sizes/font_size = 195
 text = "HP"
 
 [node name="Image2024-08-10004142986-removebg-preview" type="Sprite2D" parent="."]
