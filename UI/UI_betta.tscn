@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d3mv34sane65o"]
+[gd_scene load_steps=17 format=3 uid="uid://d3mv34sane65o"]
 
 [ext_resource type="Script" path="res://UI/game_ui.gd" id="1_1jjxq"]
 [ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://ui/wave_ui.tscn" id="2_d73ce"]
@@ -11,7 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://ui/scroll-removebg-preview.png" id="8_kc531"]
 [ext_resource type="FontFile" uid="uid://vevipi8e1nnw" path="res://ui/Font/Jacquard12-Regular.ttf" id="9_8fuum"]
 [ext_resource type="Texture2D" uid="uid://dt5ryfbtsivsr" path="res://levels assets/Models/OBJ format/image_2024-08-10_004142986-removebg-preview.png" id="11_tckev"]
-[ext_resource type="Texture2D" uid="uid://ccsxof3rwam8f" path="res://levels assets/Models/OBJ format/Screenshot 2024-08-10 004713.png" id="12_1ddji"]
+[ext_resource type="Texture2D" uid="uid://ccbb146oh0cly" path="res://levels assets/Models/OBJ format/magic tower icon.png" id="12_in4p2"]
+[ext_resource type="Texture2D" uid="uid://ds34ffh16w4yi" path="res://levels assets/Models/OBJ format/catapult icon.png" id="13_arhxx"]
+[ext_resource type="Texture2D" uid="uid://dg5kdu2usscds" path="res://levels assets/Models/OBJ format/hammer icon.png" id="14_kto46"]
+[ext_resource type="Texture2D" uid="uid://c0vfy8bybfhsh" path="res://levels assets/Models/OBJ format/cross.png" id="15_0mh5v"]
+[ext_resource type="Texture2D" uid="uid://b7ld86ghjpvg5" path="res://levels assets/Models/OBJ format/wall icon.png" id="16_2f2sr"]
 
 [node name="debug_Game_UI" type="Control"]
 layout_mode = 3
@@ -325,15 +329,36 @@ theme_override_fonts/font = ExtResource("9_8fuum")
 theme_override_font_sizes/font_size = 195
 text = "HP"
 
-[node name="Image2024-08-10004142986-removebg-preview" type="Sprite2D" parent="."]
+[node name="balista tower icon" type="Sprite2D" parent="."]
 position = Vector2(41, 50)
 scale = Vector2(0.769231, 0.720588)
 texture = ExtResource("11_tckev")
 
-[node name="Screenshot2024-08-10004713" type="Sprite2D" parent="."]
-position = Vector2(40, 152)
-scale = Vector2(0.450495, 0.447368)
-texture = ExtResource("12_1ddji")
+[node name="MagicTowerIcon" type="Sprite2D" parent="."]
+position = Vector2(41, 151)
+scale = Vector2(0.559406, 0.584211)
+texture = ExtResource("12_in4p2")
+
+[node name="CatapultIcon" type="Sprite2D" parent="."]
+position = Vector2(40, 259)
+scale = Vector2(0.671429, 0.722222)
+texture = ExtResource("13_arhxx")
+
+[node name="HammerIcon" type="Sprite2D" parent="."]
+position = Vector2(41, 362)
+scale = Vector2(0.0913086, 0.0908204)
+texture = ExtResource("14_kto46")
+flip_h = true
+
+[node name="Cross" type="Sprite2D" parent="."]
+position = Vector2(39, 466)
+scale = Vector2(0.169444, 0.133333)
+texture = ExtResource("15_0mh5v")
+
+[node name="WallIcon" type="Sprite2D" parent="."]
+position = Vector2(41, 567)
+scale = Vector2(0.556075, 0.529703)
+texture = ExtResource("16_2f2sr")
 
 [connection signal="pressed" from="M/VB/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="M/VB/to menu" to="." method="_on_start_pressed"]
@@ -341,6 +366,6 @@ texture = ExtResource("12_1ddji")
 [connection signal="pressed" from="M/VB2/Tower2" to="." method="_on_tower_2_pressed"]
 [connection signal="pressed" from="M/VB2/Tower3" to="." method="_on_tower_3_pressed"]
 [connection signal="pressed" from="M/VB2/level up" to="." method="_on_enemy_1_pressed"]
-[connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_turret_pressed"]
 [connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_tower_pressed"]
+[connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_turret_pressed"]
 [connection signal="pressed" from="M/VB2/Wall" to="." method="_on_wall_pressed"]
