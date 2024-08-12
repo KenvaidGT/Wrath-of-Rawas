@@ -1,7 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://r0usejbkxvci"]
+[gd_scene load_steps=7 format=3 uid="uid://r0usejbkxvci"]
 
 [ext_resource type="Texture2D" uid="uid://c2vl3q33q5q17" path="res://UI/images.jpg" id="1_jksyy"]
 [ext_resource type="Script" path="res://UI/placeable_towers_ui.gd" id="1_p6se4"]
+[ext_resource type="PackedScene" uid="uid://be0ubwslris3e" path="res://Towers_and_wall/Wall.tscn" id="2_yue6i"]
+[ext_resource type="Script" path="res://UI/Wall Button.gd" id="3_l0nak"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_37rle"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xfbue"]
 
@@ -13,6 +17,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p6se4")
+wall_activity_button_icon = SubResource("ImageTexture_37rle")
+wall_activity_draggable = ExtResource("2_yue6i")
 
 [node name="TextureBox" type="TextureRect" parent="."]
 modulate = Color(0, 0, 0, 0.188235)
@@ -48,6 +54,7 @@ custom_minimum_size = Vector2(138, 138)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
+script = ExtResource("3_l0nak")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="TextureBox/BoxContainer"]
 layout_mode = 2
