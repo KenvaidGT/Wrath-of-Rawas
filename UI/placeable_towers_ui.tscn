@@ -9,7 +9,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_xfbue"]
 
-[node name="PlaceableTowersUI" type="Control"]
+[node name="NewUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +20,7 @@ script = ExtResource("1_p6se4")
 wall_activity_button_icon = SubResource("ImageTexture_37rle")
 wall_activity_draggable = ExtResource("2_yue6i")
 
-[node name="TextureBox" type="TextureRect" parent="."]
+[node name="ActivityBar" type="TextureRect" parent="."]
 modulate = Color(0, 0, 0, 0.188235)
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 1
@@ -35,7 +35,7 @@ size_flags_vertical = 4
 texture = ExtResource("1_jksyy")
 expand_mode = 1
 
-[node name="BoxContainer" type="BoxContainer" parent="TextureBox"]
+[node name="BoxContainer" type="BoxContainer" parent="ActivityBar"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -46,29 +46,29 @@ offset_bottom = 69.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureBox/BoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ActivityBar/BoxContainer"]
 layout_mode = 2
 
-[node name="Wall Button" type="Button" parent="TextureBox/BoxContainer/VBoxContainer"]
+[node name="Wall Button" type="Button" parent="ActivityBar/BoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(138, 138)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 script = ExtResource("3_l0nak")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="TextureBox/BoxContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="ActivityBar/BoxContainer"]
 layout_mode = 2
 
-[node name="Tower1 Button" type="Button" parent="TextureBox/BoxContainer/VBoxContainer2"]
+[node name="Tower1 Button" type="Button" parent="ActivityBar/BoxContainer/VBoxContainer2"]
 custom_minimum_size = Vector2(138, 138)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="TextureBox/BoxContainer"]
+[node name="VBoxContainer3" type="VBoxContainer" parent="ActivityBar/BoxContainer"]
 layout_mode = 2
 
-[node name="Tower2 Button" type="Button" parent="TextureBox/BoxContainer/VBoxContainer3"]
+[node name="Tower2 Button" type="Button" parent="ActivityBar/BoxContainer/VBoxContainer3"]
 custom_minimum_size = Vector2(138, 138)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -107,7 +107,36 @@ grow_vertical = 0
 text = "Tower2"
 label_settings = SubResource("LabelSettings_xfbue")
 
-[connection signal="button_down" from="TextureBox/BoxContainer/VBoxContainer/Wall Button" to="." method="_on_wall_button_button_down"]
-[connection signal="button_up" from="TextureBox/BoxContainer/VBoxContainer/Wall Button" to="." method="_on_wall_button_button_up"]
-[connection signal="button_down" from="TextureBox/BoxContainer/VBoxContainer2/Tower1 Button" to="." method="_on_tower_1_button_button_down"]
-[connection signal="button_up" from="TextureBox/BoxContainer/VBoxContainer2/Tower1 Button" to="." method="_on_tower_1_button_button_up"]
+[node name="Zettings" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 0.188235)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 841.0
+offset_bottom = -570.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_jksyy")
+expand_mode = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="Zettings"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = -75.0
+offset_right = -4.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="button_down" from="ActivityBar/BoxContainer/VBoxContainer/Wall Button" to="." method="_on_wall_button_button_down"]
+[connection signal="button_up" from="ActivityBar/BoxContainer/VBoxContainer/Wall Button" to="." method="_on_wall_button_button_up"]
+[connection signal="button_down" from="ActivityBar/BoxContainer/VBoxContainer2/Tower1 Button" to="." method="_on_tower_1_button_button_down"]
+[connection signal="button_up" from="ActivityBar/BoxContainer/VBoxContainer2/Tower1 Button" to="." method="_on_tower_1_button_button_up"]

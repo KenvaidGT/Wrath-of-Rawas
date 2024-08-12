@@ -40,6 +40,4 @@ shape = SubResource("BoxShape3D_mfijh")
 
 [node name="PlaceableTowersUI" parent="." instance=ExtResource("2_7f0hr")]
 
-[connection signal="pressed" from="PlaceableTowersUI/TextureBox/BoxContainer/VBoxContainer/Wall Button" to="PlaceableTowersUI" method="_on_wall_button_pressed"]
-
 [editable path="PlaceableTowersUI"]

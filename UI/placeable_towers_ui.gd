@@ -20,7 +20,6 @@ func _on_wall_button_button_up():
 	
 func _physics_process(_delta):
 	if _is_dragging:
-		
 		var space_state = _draggable.get_world_3d().direct_space_state
 		var mouse_pos:Vector2 = get_viewport().get_mouse_position()
 		var origin:Vector3 = cam.project_ray_origin(mouse_pos)

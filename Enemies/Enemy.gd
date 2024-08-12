@@ -7,7 +7,7 @@ extends CharacterBody3D
 @export var hp: float = 100.0
 @export var ATK: int = 3
 @export var attack_radius: float = 5.0
-@export var avoid_radius: float = 2.0  
+@export var avoid_radius: float = 1.0  
 @export var gravity: float = -9.8
 
 var towers = []
