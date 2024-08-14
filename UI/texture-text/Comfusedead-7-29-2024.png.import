@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u5tympdrb6xg"
-path="res://.godot/imported/Comfusedead-7-29-2024.png-6dc639225349ff95548c788fa81386f7.ctex"
+path="res://.godot/imported/Comfusedead-7-29-2024.png-f0985c7ed8d72ba8829de9514139164b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/texture-text/Comfusedead-7-29-2024.png"
-dest_files=["res://.godot/imported/Comfusedead-7-29-2024.png-6dc639225349ff95548c788fa81386f7.ctex"]
+source_file="res://ui/texture-text/Comfusedead-7-29-2024.png"
+dest_files=["res://.godot/imported/Comfusedead-7-29-2024.png-f0985c7ed8d72ba8829de9514139164b.ctex"]
 
 [params]
 

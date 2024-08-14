@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d3mv34sane65o"]
+[gd_scene load_steps=16 format=3 uid="uid://d3mv34sane65o"]
 
 [ext_resource type="Script" path="res://UI/game_ui.gd" id="1_1jjxq"]
 [ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://ui/wave_ui.tscn" id="2_d73ce"]
@@ -9,7 +9,6 @@
 [ext_resource type="FontFile" uid="uid://cvbxxusqgo8m7" path="res://ui/Font/YatraOne-Regular.ttf" id="7_mulnp"]
 [ext_resource type="Texture2D" uid="uid://bn4cb00cobami" path="res://ui/buttons/button_square_depth_border.png" id="7_nb0p8"]
 [ext_resource type="Texture2D" uid="uid://ciamoe0tbxo3r" path="res://ui/scroll-removebg-preview.png" id="8_kc531"]
-[ext_resource type="FontFile" uid="uid://vevipi8e1nnw" path="res://ui/Font/Jacquard12-Regular.ttf" id="9_8fuum"]
 [ext_resource type="Texture2D" uid="uid://dt5ryfbtsivsr" path="res://levels assets/Models/OBJ format/image_2024-08-10_004142986-removebg-preview.png" id="11_tckev"]
 [ext_resource type="Texture2D" uid="uid://ccbb146oh0cly" path="res://levels assets/Models/OBJ format/magic tower icon.png" id="12_in4p2"]
 [ext_resource type="Texture2D" uid="uid://ds34ffh16w4yi" path="res://levels assets/Models/OBJ format/catapult icon.png" id="13_arhxx"]
@@ -287,15 +286,26 @@ scale = Vector2(0.215686, 0.112745)
 texture = ExtResource("8_kc531")
 
 [node name="Label" type="Label" parent="Scroll-removebg-preview2"]
-offset_left = -208.637
-offset_top = -177.392
-offset_right = 263.363
-offset_bottom = 53.6084
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_left = -185.455
+offset_top = -195.131
+offset_right = 286.545
+offset_bottom = 35.8698
+theme_override_colors/font_color = Color(0, 0.941176, 0.92549, 1)
 theme_override_colors/font_shadow_color = Color(0, 0.823529, 0.917647, 1)
-theme_override_fonts/font = ExtResource("9_8fuum")
-theme_override_font_sizes/font_size = 195
+theme_override_fonts/font = ExtResource("7_mulnp")
+theme_override_font_sizes/font_size = 150
 text = "Mana"
+
+[node name="number2" type="Label" parent="Scroll-removebg-preview2"]
+offset_left = -207.068
+offset_top = -80.703
+offset_right = 206.932
+offset_bottom = 216.297
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_mulnp")
+theme_override_font_sizes/font_size = 200
+text = "0"
+horizontal_alignment = 1
 
 [node name="Scroll-removebg-preview" type="Sprite2D" parent="."]
 position = Vector2(1084, 697)
@@ -303,15 +313,25 @@ scale = Vector2(0.21732, 0.11152)
 texture = ExtResource("8_kc531")
 
 [node name="Label" type="Label" parent="Scroll-removebg-preview"]
-offset_left = -151.85
+offset_left = -161.053
 offset_top = -188.307
-offset_right = 173.15
-offset_bottom = 7.69273
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0.784314, 0.694118, 0.286275, 1)
-theme_override_fonts/font = ExtResource("9_8fuum")
-theme_override_font_sizes/font_size = 195
+offset_right = 273.947
+offset_bottom = 100.693
+theme_override_colors/font_color = Color(0.945098, 0.803922, 0, 1)
+theme_override_fonts/font = ExtResource("7_mulnp")
+theme_override_font_sizes/font_size = 150
 text = "Gold"
+
+[node name="number2" type="Label" parent="Scroll-removebg-preview"]
+offset_left = -207.068
+offset_top = -80.703
+offset_right = 206.932
+offset_bottom = 216.297
+theme_override_colors/font_color = Color(1, 0.827451, 0, 1)
+theme_override_fonts/font = ExtResource("7_mulnp")
+theme_override_font_sizes/font_size = 200
+text = "0"
+horizontal_alignment = 1
 
 [node name="Scroll-removebg-preview3" type="Sprite2D" parent="."]
 position = Vector2(954, 696.375)
@@ -319,15 +339,25 @@ scale = Vector2(0.21732, 0.114583)
 texture = ExtResource("8_kc531")
 
 [node name="Label" type="Label" parent="Scroll-removebg-preview3"]
-offset_left = -133.444
+offset_left = -105.835
 offset_top = -186.546
-offset_right = 151.556
+offset_right = 179.165
 offset_bottom = 36.4542
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_8fuum")
-theme_override_font_sizes/font_size = 195
+theme_override_colors/font_color = Color(0.827451, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_mulnp")
+theme_override_font_sizes/font_size = 150
 text = "HP"
+
+[node name="number" type="Label" parent="Scroll-removebg-preview3"]
+offset_left = -212.0
+offset_top = -82.0
+offset_right = 202.0
+offset_bottom = 215.0
+theme_override_colors/font_color = Color(0.654902, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_mulnp")
+theme_override_font_sizes/font_size = 200
+text = "0"
+horizontal_alignment = 1
 
 [node name="balista tower icon" type="Sprite2D" parent="."]
 position = Vector2(41, 50)
@@ -366,6 +396,6 @@ texture = ExtResource("16_2f2sr")
 [connection signal="pressed" from="M/VB2/Tower2" to="." method="_on_tower_2_pressed"]
 [connection signal="pressed" from="M/VB2/Tower3" to="." method="_on_tower_3_pressed"]
 [connection signal="pressed" from="M/VB2/level up" to="." method="_on_enemy_1_pressed"]
-[connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_tower_pressed"]
 [connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_turret_pressed"]
+[connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_tower_pressed"]
 [connection signal="pressed" from="M/VB2/Wall" to="." method="_on_wall_pressed"]
