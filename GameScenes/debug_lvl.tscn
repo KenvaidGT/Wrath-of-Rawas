@@ -26,6 +26,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0534172, -1.90735e-06, 0.0
 script = ExtResource("1_ly31a")
 
 [node name="debug_wave_UI" parent="." instance=ExtResource("3_iuu1x")]
+metadata/_edit_use_anchors_ = true
 
 [node name="debug_Game_UI" parent="." instance=ExtResource("2_by0yn")]
 
