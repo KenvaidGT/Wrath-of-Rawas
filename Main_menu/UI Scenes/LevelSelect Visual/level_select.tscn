@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://Main_menu/UI Scenes/LevelSelect Visual/level_select.gd" id="1_iq1rk"]
 [ext_resource type="Texture2D" uid="uid://3m81bu7kicbt" path="res://menu_backgrounds/lev sel.png" id="1_jhaj8"]
-[ext_resource type="Texture2D" uid="uid://b34h3p6csof5e" path="res://UI/photo_2024-08-02_10-57-16.jpg" id="3_bl7nf"]
-[ext_resource type="Texture2D" uid="uid://s56k2qxqiay4" path="res://UI/texture-text/quit-removebg-preview_optimized.png" id="4_bbjym"]
-[ext_resource type="Texture2D" uid="uid://030xoju4srwd" path="res://UI/texture-text/level-removebg-preview.png" id="5_bpwt0"]
-[ext_resource type="Texture2D" uid="uid://b3t1k2qvlarew" path="res://UI/texture-text/quit2-removebg-preview.png" id="5_tt6bm"]
-[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://UI/texture-text/Level-one-7-16-2024.png" id="7_41j45"]
-[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://UI/texture-text/Level-7-23-2024.png" id="8_obkcn"]
+[ext_resource type="Texture2D" uid="uid://b34h3p6csof5e" path="res://ui/photo_2024-08-02_10-57-16.jpg" id="3_bl7nf"]
+[ext_resource type="Texture2D" uid="uid://s56k2qxqiay4" path="res://ui/texture-text/quit-removebg-preview_optimized.png" id="4_bbjym"]
+[ext_resource type="Texture2D" uid="uid://030xoju4srwd" path="res://ui/texture-text/level-removebg-preview.png" id="5_bpwt0"]
+[ext_resource type="Texture2D" uid="uid://b3t1k2qvlarew" path="res://ui/texture-text/quit2-removebg-preview.png" id="5_tt6bm"]
+[ext_resource type="Texture2D" uid="uid://dnwp7a02h8okw" path="res://ui/texture-text/Level-one-7-16-2024.png" id="7_41j45"]
+[ext_resource type="Texture2D" uid="uid://5el2k7tfnjn7" path="res://ui/texture-text/Level-7-23-2024.png" id="8_obkcn"]
 
 [node name="Level_select" type="Node2D"]
 script = ExtResource("1_iq1rk")

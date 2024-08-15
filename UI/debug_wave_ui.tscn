@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://djyxexcbotgbi"]
 
 [ext_resource type="Script" path="res://UI/wave_ui.gd" id="1_sccqj"]
-[ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://UI/buttons/button_square_depth_line.png" id="2_mxood"]
-[ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://UI/buttons/button_square_border.png" id="3_1p1g8"]
+[ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://ui/buttons/button_square_depth_line.png" id="2_mxood"]
+[ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://ui/buttons/button_square_border.png" id="3_1p1g8"]
 [ext_resource type="PackedScene" uid="uid://35rty2hrer4y" path="res://GameScenes/EndGameMenu.tscn" id="4_b42md"]
 [ext_resource type="PackedScene" uid="uid://c8w3pynyi6lmb" path="res://GameScenes/WinGameMenu.tscn" id="5_q34cp"]
 
