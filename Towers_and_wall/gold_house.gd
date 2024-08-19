@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var detection_area = $Area3D  # Убедитесь, что это правильный путь к Area3D
+@onready var detection_area = $Area3D
 
 func _ready():
 	if detection_area:
@@ -10,5 +10,5 @@ func _ready():
 
 func _on_enemy_entered(body: Node):
 	if body.is_in_group("Enemy"):
-		print("Enemy detected:", body.name)  # Отладка: выводим имя врага
+		print("Enemy detected:", body.name)
 		body.hit_tower()

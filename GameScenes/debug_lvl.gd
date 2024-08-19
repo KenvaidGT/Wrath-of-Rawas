@@ -16,7 +16,6 @@ var b = 0
 var a = 0
 var enemy_preload = preload("res://Enemies/Enemy.tscn")
 
-# Хранение количества ударов для каждого врага
 var enemy_hit_count = {}
 
 func _ready():
@@ -28,29 +27,24 @@ func _physics_process(_delta):
 	get_tree().call_group("Enemy", "update_target_location", main_house.global_transform.origin)
 	get_tree().call_group("Enemy", "update_target_location", gold_house.global_transform.origin)
 
-# Запускает таймер
 func _on_start_pressed():
 	timer.start()
 
-# Спавн врага
 func _on_spawner_timeout():
 	spawn_enemy()
 	a -= 1
 	if a <= 0:
 		timer.stop()
 
-# Создание врага и добавление его на карту
 func spawn_enemy():
 	var enemy = enemy_preload.instantiate()
 	enemy.position = Vector3(-4, 0, -8)
 	$Enemies.add_child(enemy)
-	enemy_hit_count[enemy] = 0 # Инициализируем счетчик ударов для нового врага
+	enemy_hit_count[enemy] = 0 
 
-# Обработка изменений врагов
 func _on_enemy_changed(new_value):
 	a = new_value
 
-# Обработка изменения навигации
 func _on_wall_pressed():
 	_on_navigation_region_3d_navigation_mesh_changed()
 
@@ -68,15 +62,13 @@ func _on_main_menu_button_pressed():
 func _on_main_menu_button_1_pressed():
 	should_run = false
 
-# Функция обработки удара по башне
 func on_enemy_hit_tower(enemy):
 	if enemy_hit_count.has(enemy):
 		enemy_hit_count[enemy] += 1
 		if enemy_hit_count[enemy] >= 4:
 			return_to_spawn_and_despawn(enemy)
 
-# Возвращаем врага на точку спавна и удаляем его
 func return_to_spawn_and_despawn(enemy):
-	enemy.position = Vector3(-4, 0, -8)  # Позиция точки спавна
-	enemy.queue_free()  # Удаляем врага после возврата на точку спавна
-	enemy_hit_count.erase(enemy)  # Удаляем запись о враге
+	enemy.position = Vector3(-4, 0, -8)
+	enemy.queue_free()
+	enemy_hit_count.erase(enemy)

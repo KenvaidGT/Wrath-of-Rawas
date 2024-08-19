@@ -8,8 +8,8 @@ extends CharacterBody3D
 @export var avoid_radius: float = 2.0  
 @export var gravity: float = -9.8
 
-var attack_count = 0  # Количество ударов по башне
-var spawn_position: Vector3 = Vector3.ZERO  # Позиция спавна
+var attack_count = 0
+var spawn_position: Vector3 = Vector3.ZERO
 
 func take_damage(amount: float):
 	hp -= amount
@@ -24,7 +24,7 @@ func die():
 
 func _ready():
 	add_to_group("Enemy")
-	spawn_position = global_transform.origin  # Сохраняем позицию спавна
+	spawn_position = global_transform.origin
 
 func _process(delta: float):
 	velocity.y += gravity * delta
@@ -64,5 +64,4 @@ func hit_tower():
 	attack_count += 1
 	print("Enemy attacked tower. Total attacks: ", attack_count)
 	if attack_count >= 4:
-		# Update the target location to spawn position
 		update_target_location(spawn_position)
