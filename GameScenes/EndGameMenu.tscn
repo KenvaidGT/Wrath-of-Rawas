@@ -56,13 +56,13 @@ scale = Vector2(0.39, 0.39)
 size_flags_horizontal = 4
 size_flags_vertical = 0
 
-[node name="MainMenu button" type="TextureButton" parent="VBoxContainer"]
+[node name="MainMenu button1" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("1_h72m0")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/MainMenu button"]
+[node name="Label" type="Label" parent="VBoxContainer/MainMenu button1"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -87,4 +87,4 @@ label_settings = SubResource("LabelSettings_6hv6h")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/MainMenu button" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainMenu button1" to="." method="_on_main_menu_button_pressed"]

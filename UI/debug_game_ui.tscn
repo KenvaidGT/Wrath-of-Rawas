@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://cutkc7mmilbft"]
 
 [ext_resource type="Script" path="res://UI/game_ui.gd" id="1_ibbor"]
-[ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://ui/wave_ui.tscn" id="2_tci8h"]
+[ext_resource type="PackedScene" uid="uid://8ta4yvucudcg" path="res://UI/wave_ui.tscn" id="2_tci8h"]
 [ext_resource type="PackedScene" uid="uid://35rty2hrer4y" path="res://GameScenes/EndGameMenu.tscn" id="3_axkg2"]
-[ext_resource type="Texture2D" uid="uid://c2vl3q33q5q17" path="res://ui/images.jpg" id="4_d2e3y"]
-[ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://ui/buttons/button_square_border.png" id="5_h8cqu"]
-[ext_resource type="Texture2D" uid="uid://dsfg6oll0yc2" path="res://ui/buttons/button_round_line.png" id="6_rr32c"]
-[ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://ui/buttons/button_square_depth_line.png" id="7_c51hb"]
-[ext_resource type="Texture2D" uid="uid://bn4cb00cobami" path="res://ui/buttons/button_square_depth_border.png" id="8_sjvsr"]
+[ext_resource type="Texture2D" uid="uid://c2vl3q33q5q17" path="res://UI/images.jpg" id="4_d2e3y"]
+[ext_resource type="Texture2D" uid="uid://duujvvxfjdtlr" path="res://UI/buttons/button_square_border.png" id="5_h8cqu"]
+[ext_resource type="Texture2D" uid="uid://dsfg6oll0yc2" path="res://UI/buttons/button_round_line.png" id="6_rr32c"]
+[ext_resource type="Texture2D" uid="uid://bl7yaiqialt8y" path="res://UI/buttons/button_square_depth_line.png" id="7_c51hb"]
+[ext_resource type="Texture2D" uid="uid://bn4cb00cobami" path="res://UI/buttons/button_square_depth_border.png" id="8_sjvsr"]
 
 [node name="debug_Game_UI" type="Control"]
 layout_mode = 3
@@ -228,3 +228,5 @@ text = "Wall"
 [connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_tower_pressed"]
 [connection signal="pressed" from="M/VB2/Delete_tower" to="." method="_on_delet_turret_pressed"]
 [connection signal="pressed" from="M/VB2/Wall" to="." method="_on_wall_pressed"]
+
+[editable path="EndGameUI"]

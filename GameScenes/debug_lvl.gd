@@ -10,6 +10,8 @@ extends Node3D
 @onready var timer2 = $Enemies/Spawner2
 @onready var game_ui = $debug_Game_UI
 @onready var nav_region = $NavigationRegion3D
+@onready var should_run = true
+
 var b = 0
 
 var a = 0
@@ -47,11 +49,13 @@ func _on_wall_pressed():
 func _on_navigation_region_3d_navigation_mesh_changed():
 	if nav_region:
 		bake_navigation_mesh()
-		print("Navigation mesh has been baked and updated")
 
 func bake_navigation_mesh():
-	b += 1
-	if nav_region:
+	if not should_run:
 		nav_region.bake_navigation_mesh()
-	elif b >= 5:
-		return
+
+func _on_main_menu_button_pressed():
+	should_run = false
+
+func _on_main_menu_button_1_pressed() -> void:
+	should_run = false

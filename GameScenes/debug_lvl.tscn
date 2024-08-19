@@ -12,8 +12,6 @@
 [sub_resource type="NavigationMesh" id="NavigationMesh_lrl38"]
 vertices = PackedVector3Array(-12, 0.566439, -2.4, -6.9, 0.566439, -2.3, -6.8, 0.566439, -3.1, -12, 0.566439, -2.4, -6.8, 0.566439, -3.1, -6.1, 0.566439, -3.3, -6.1, 0.566439, -12, -12, 0.566439, -12, -2.6, 0.566439, -0.7, -2.4, 0.566439, -0.5, -2.1, 0.566439, -0.7, -5.4, 0.566439, -2.9, -5.4, 0.566439, -0.7, -2.6, 0.566439, -0.7, -5.6, 0.566439, -3.2, -5.4, 0.566439, -2.9, -2.6, 0.566439, -0.7, -2.1, 0.566439, -0.7, -6.1, 0.566439, -12, -6.1, 0.566439, -3.3, -5.6, 0.566439, -3.2, -2.1, 0.566439, -0.7, 3.8, 0.566439, -0.7, 3.8, 0.566439, -2.9, -2.1, 0.566439, -0.7, 3.8, 0.566439, -2.9, 4, 0.566439, -3.2, 4.5, 0.566439, -12, -6.1, 0.566439, -12, -5.6, 0.566439, -3.2, 4, 0.566439, -3.2, 4.5, 0.566439, -3.3, 4.5, 0.566439, -12, 5.2, 0.566439, -3.1, 5.3, 0.566439, -2.3, 12, 0.566439, -2.4, 4.5, 0.566439, -3.3, 5.2, 0.566439, -3.1, 12, 0.566439, -2.4, 12, 0.566439, -12, 4.5, 0.566439, -12, -12, 0.566439, -0.0999994, -6.9, 0.566439, -0.2, -6.9, 0.566439, -2.3, -12, 0.566439, -2.4, 5.3, 0.566439, -2.3, 5.3, 0.566439, -0.2, 12, 0.566439, -0.0999994, 12, 0.566439, -2.4, -2.1, 0.566439, 0.8, -2.4, 0.566439, 0.6, -2.6, 0.566439, 0.8, 4.8, 0.566439, 12, -6.9, 0.566439, 0.400001, -6.9, 0.566439, -0.2, -12, 0.566439, -0.0999994, -6.5, 0.566439, 0.8, -6.9, 0.566439, 0.400001, -12, 0.566439, -0.0999994, -12, 0.566439, 12, -12, 0.566439, 12, 4.8, 0.566439, 12, -2.6, 0.566439, 0.8, -6.5, 0.566439, 0.8, 4.8, 0.566439, 12, 4.8, 0.566439, 0.8, -2.1, 0.566439, 0.8, 12, 0.566439, -0.0999994, 5.3, 0.566439, -0.2, 5.2, 0.566439, 0.6, 12, 0.566439, -0.0999994, 5.2, 0.566439, 0.6, 4.8, 0.566439, 0.8, 4.8, 0.566439, 12, 12, 0.566439, 12)
 polygons = [PackedInt32Array(0, 2, 1), PackedInt32Array(4, 3, 5), PackedInt32Array(5, 3, 6), PackedInt32Array(6, 3, 7), PackedInt32Array(10, 9, 8), PackedInt32Array(13, 12, 11), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 17), PackedInt32Array(20, 19, 18), PackedInt32Array(23, 22, 21), PackedInt32Array(25, 24, 26), PackedInt32Array(26, 24, 29), PackedInt32Array(26, 29, 28), PackedInt32Array(26, 28, 27), PackedInt32Array(32, 31, 30), PackedInt32Array(35, 34, 33), PackedInt32Array(37, 36, 38), PackedInt32Array(38, 36, 40), PackedInt32Array(38, 40, 39), PackedInt32Array(42, 41, 43), PackedInt32Array(43, 41, 44), PackedInt32Array(45, 48, 46), PackedInt32Array(46, 48, 47), PackedInt32Array(50, 49, 51), PackedInt32Array(51, 49, 52), PackedInt32Array(55, 54, 53), PackedInt32Array(57, 56, 58), PackedInt32Array(58, 56, 59), PackedInt32Array(63, 62, 60), PackedInt32Array(60, 62, 61), PackedInt32Array(66, 65, 64), PackedInt32Array(67, 69, 68), PackedInt32Array(71, 70, 72), PackedInt32Array(72, 70, 73), PackedInt32Array(73, 70, 74)]
-cell_size = 0.1
-cell_height = 1.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_6drix"]
 size = Vector3(25, 1, 25)
@@ -91,6 +89,8 @@ transform = Transform3D(1, 0, 0, 0, 0.741016, 0.671488, 0, -0.671488, 0.741016, 
 [node name="attack_tower[TK]" parent="." instance=ExtResource("8_gvlpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.47148, -0.0209642, 5.28604)
 
+[connection signal="pressed" from="debug_wave_UI/EndGameUI/VBoxContainer/MainMenu button1" to="." method="_on_main_menu_button_1_pressed"]
+[connection signal="pressed" from="debug_wave_UI/WinGameUI/VBoxContainer/MainMenu button" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="debug_Game_UI/M/VB/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="debug_Game_UI/M/VB2/Wall" to="." method="_on_wall_pressed"]
 [connection signal="ready" from="Enemies/Spawner" to="." method="_on_spawner_ready"]
@@ -98,4 +98,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.47148, -0.0209642, 5.28604
 [connection signal="bake_finished" from="NavigationRegion3D" to="." method="_on_navigation_region_3d_bake_finished"]
 [connection signal="navigation_mesh_changed" from="NavigationRegion3D" to="." method="_on_navigation_region_3d_navigation_mesh_changed"]
 
+[editable path="debug_wave_UI"]
+[editable path="debug_wave_UI/EndGameUI"]
+[editable path="debug_wave_UI/WinGameUI"]
 [editable path="debug_Game_UI"]
