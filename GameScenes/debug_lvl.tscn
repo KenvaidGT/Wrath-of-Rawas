@@ -102,3 +102,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.47148, -0.0209642, 5.28604
 [editable path="debug_wave_UI/EndGameUI"]
 [editable path="debug_wave_UI/WinGameUI"]
 [editable path="debug_Game_UI"]
+[editable path="debug_Game_UI/EndGameUI"]

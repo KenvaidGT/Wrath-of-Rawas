@@ -1,17 +1,12 @@
 extends CharacterBody3D
 
-
 @onready var nav_agent = $NavigationAgent3D
 
 @export var speed: float = 3.0
 @export var hp: float = 100.0
-@export var ATK: int = 3
 @export var attack_radius: float = 5.0
 @export var avoid_radius: float = 2.0  
 @export var gravity: float = -9.8
-
-var towers = []
-var attack_timer: Timer
 
 func take_damage(amount: float):
 	hp -= amount
@@ -26,11 +21,6 @@ func die():
 
 func _ready():
 	add_to_group("Enemy")
-	attack_timer = Timer.new()
-	attack_timer.wait_time = 1.0
-	attack_timer.one_shot = false
-	attack_timer.autostart = true
-	add_child(attack_timer)
 
 func _process(delta: float):
 	velocity.y += gravity * delta

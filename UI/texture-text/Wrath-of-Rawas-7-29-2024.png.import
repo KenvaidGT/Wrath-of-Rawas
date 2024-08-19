@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://baj02utrebb4v"
-path="res://.godot/imported/Wrath-of-Rawas-7-29-2024.png-a75a02da1f1a7a634ce1620e76b0d63f.ctex"
+path="res://.godot/imported/Wrath-of-Rawas-7-29-2024.png-308b576c87ad60f3cb4e37a89e245831.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/texture-text/Wrath-of-Rawas-7-29-2024.png"
-dest_files=["res://.godot/imported/Wrath-of-Rawas-7-29-2024.png-a75a02da1f1a7a634ce1620e76b0d63f.ctex"]
+source_file="res://UI/texture-text/Wrath-of-Rawas-7-29-2024.png"
+dest_files=["res://.godot/imported/Wrath-of-Rawas-7-29-2024.png-308b576c87ad60f3cb4e37a89e245831.ctex"]
 
 [params]
 

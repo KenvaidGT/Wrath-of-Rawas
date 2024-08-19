@@ -9,10 +9,17 @@ size = Vector3(1, 1.4364, 1)
 [node name="Gold_house" type="CharacterBody3D" groups=["Towers_and_wall"]]
 script = ExtResource("1_s4lm7")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.218201, 0)
 shape = SubResource("BoxShape3D_algdg")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.514262, 0)
 mesh = ExtResource("1_glngc")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.474317, 0)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, -0.256116, 0)
+shape = SubResource("BoxShape3D_algdg")
