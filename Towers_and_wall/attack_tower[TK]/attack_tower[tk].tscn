@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ddcbjunj386k1"]
+[gd_scene load_steps=8 format=3 uid="uid://ddcbjunj386k1"]
 
 [ext_resource type="Script" path="res://Towers_and_wall/attack_tower[TK]/attack_tower[tk].gd" id="1_fw7te"]
+[ext_resource type="PackedScene" uid="uid://cqsqqgc47jexq" path="res://Towers_and_wall/Bullet.tscn" id="2_hs7l1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rxt3l"]
 transparency = 1
@@ -15,9 +16,11 @@ albedo_color = Color(0.591518, 0.0697021, 0.447954, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4tlf5"]
 
-[node name="attack_tower[TK]" type="StaticBody3D"]
+[node name="attack_tower[TK]" type="StaticBody3D" node_paths=PackedStringArray("bullet_spawn_position")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0486932, -0.0423813, -0.0474433)
 script = ExtResource("1_fw7te")
+bullet_scene = ExtResource("2_hs7l1")
+bullet_spawn_position = NodePath("BulletSpawnPosition")
 
 [node name="RadiusVisualizer" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 5, 0, 0, 0)
@@ -30,3 +33,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_x7eeh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_4tlf5")
+
+[node name="BulletSpawnPosition" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqsqqgc47jexq"]
+
+[ext_resource type="Script" path="res://Towers_and_wall/Bullet.gd" id="1_vgg7d"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_0fkyy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tixfm"]
+
+[node name="Bullet" type="Area3D"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+collision_layer = 2
+script = ExtResource("1_vgg7d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_0fkyy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_tixfm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
