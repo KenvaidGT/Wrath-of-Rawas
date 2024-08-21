@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vxtos7kpyhj3"
-path="res://.godot/imported/icon_outline_cross.png-dc75d8092e9e39ee3b9e9dc15261ca3d.ctex"
+path="res://.godot/imported/icon_outline_cross.png-05e547843d531fc5a5868fd32915425d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/checks/icon_outline_cross.png"
-dest_files=["res://.godot/imported/icon_outline_cross.png-dc75d8092e9e39ee3b9e9dc15261ca3d.ctex"]
+source_file="res://ui/checks/icon_outline_cross.png"
+dest_files=["res://.godot/imported/icon_outline_cross.png-05e547843d531fc5a5868fd32915425d.ctex"]
 
 [params]
 

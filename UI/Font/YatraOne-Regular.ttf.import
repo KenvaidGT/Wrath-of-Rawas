@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cvbxxusqgo8m7"
-path="res://.godot/imported/YatraOne-Regular.ttf-af1bfb25e57d47de322d1865c570e298.fontdata"
+path="res://.godot/imported/YatraOne-Regular.ttf-93812de4fb65324bbfe2b677340e3869.fontdata"
 
 [deps]
 
-source_file="res://UI/Font/YatraOne-Regular.ttf"
-dest_files=["res://.godot/imported/YatraOne-Regular.ttf-af1bfb25e57d47de322d1865c570e298.fontdata"]
+source_file="res://ui/Font/YatraOne-Regular.ttf"
+dest_files=["res://.godot/imported/YatraOne-Regular.ttf-93812de4fb65324bbfe2b677340e3869.fontdata"]
 
 [params]
 

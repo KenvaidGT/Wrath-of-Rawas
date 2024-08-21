@@ -139,5 +139,3 @@ Enemies calculate the shortest path to their target. Building placement triggers
 - Story-driven campaigns with progressive difficulty.
 
 ### Jira board: https://cutekittens.atlassian.net/jira/core/projects/WR/board
-
-
