@@ -10,7 +10,7 @@ extends CharacterBody3D
 
 var attack_count = 0
 var spawn_position: Vector3 = Vector3.ZERO
-var returning_to_spawn = false
+var returning_to_spawn = false 
 
 func take_damage(amount: float):
 	hp -= amount
@@ -26,23 +26,45 @@ func die():
 func _ready():
 	add_to_group("Enemy")
 	spawn_position = global_transform.origin
+	nav_agent.target_position = spawn_position
 
 func _process(delta: float):
 	velocity.y += gravity * delta
 
-	if not nav_agent.is_navigation_finished():
+	if nav_agent.is_navigation_finished() and not returning_to_spawn:
+		return
+
+	if attack_count < 4 and not returning_to_spawn:
 		var next_location = nav_agent.get_next_path_position()
-		var new_velocity = (next_location - global_transform.origin).normalized() * speed
+		var current_location = global_transform.origin
+		var new_velocity = (next_location - current_location).normalized() * speed
+
+		var avoid_force = Vector3.ZERO
+		for enemy in get_tree().get_nodes_in_group("Enemy"):
+			if enemy == self:
+				continue
+			var distance = current_location.distance_to(enemy.global_transform.origin)
+			if distance < avoid_radius:
+				avoid_force += (current_location - enemy.global_transform.origin).normalized() * (avoid_radius - distance)
+
+		new_velocity += avoid_force.normalized() * speed
+
 		velocity = velocity.move_toward(new_velocity, delta * speed)
 		move_and_slide()
 	else:
-		if returning_to_spawn and global_transform.origin.distance_to(spawn_position) < 1.0:
+		if not returning_to_spawn:
+			update_target_location(spawn_position)
+			returning_to_spawn = true
+
+		var direction_to_spawn = (spawn_position - global_transform.origin).normalized()
+		velocity = direction_to_spawn * speed
+		move_and_slide()
+		if global_transform.origin.distance_to(spawn_position) < 1.0:
 			print("Enemy reached spawn point and is being removed.")
 			queue_free()
 
 func update_target_location(target_location: Vector3):
-	if not returning_to_spawn:
-		nav_agent.target_position = target_location
+	nav_agent.target_position = target_location
 
 func hit_tower():
 	if attack_count < 4:
@@ -50,8 +72,5 @@ func hit_tower():
 		print("Enemy attacked tower. Total attacks: ", attack_count)
 	else:
 		if not returning_to_spawn:
-			returning_to_spawn = true
 			update_target_location(spawn_position)
-
-func is_returning_to_spawn() -> bool:
-	return returning_to_spawn
+			returning_to_spawn = true
