@@ -2253,91 +2253,117 @@ data = PackedVector3Array(1.9503, 0.63, -0.2813, 1.9912, 0.63, -0.3425, 1.9503, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.92206, 0, 2.07196)
 mesh = ExtResource("1_e2yx5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile185"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile185"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile185/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_b8msq")
 
 [node name="RoadTile173" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("2_ghh2s")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile173"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile173"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile173/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kkysa")
 
 [node name="RoadTile174" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("3_s1ob6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile174"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile174"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile174/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hf2pk")
 
 [node name="RoadTile175" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("4_unw2f")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile175"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile175"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile175/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_s824x")
 
 [node name="RoadTile176" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("5_sbl0r")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile176"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile176"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile176/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_u4b1g")
 
 [node name="RoadTile177" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("6_majsx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile177"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile177"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile177/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gpuud")
 
 [node name="RoadTile178" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("7_4yylq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile178"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile178"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile178/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wdyxq")
 
 [node name="RoadTile179" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("8_qifhh")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile179"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile179"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile179/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pa01b")
 
 [node name="RoadTile180" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("9_ywyx6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile180"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile180"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile180/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wxfsj")
 
 [node name="RoadTile181" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("10_ativa")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile181"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile181"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile181/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_grkxe")
 
 [node name="RoadTile182" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("11_wrb6g")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile182"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile182"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile182/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wvlnk")
 
 [node name="RoadTile183" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("12_3dks8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile183"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile183"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile183/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_rlepw")
 
 [node name="RoadTile184" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11775, 0, 2.11635)
 mesh = ExtResource("13_tgjaj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile184"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile184"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile184/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_6dkqh")
 
 [node name="Altar-stone" type="MeshInstance3D" parent="."]
@@ -6922,14 +6948,18 @@ shape = SubResource("ConcavePolygonShape3D_tx03p")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("810_rc3rq")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="RoadTile149"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile149"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RoadTile149/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ney0x")
 
 [node name="RoadTile150" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("811_7nx4q")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile150"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile150"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile150/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2vjea")
 
 [node name="RoadTile151" type="MeshInstance3D" parent="."]
@@ -6945,861 +6975,1107 @@ shape = SubResource("ConcavePolygonShape3D_bwc4d")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("813_lig8v")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile152"]
+[node name="StaticBody3D2" type="StaticBody3D" parent="RoadTile152"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile152/StaticBody3D2"]
 shape = SubResource("ConcavePolygonShape3D_b1xwk")
 
 [node name="RoadTile153" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("814_urhoy")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile153"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile153"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile153/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g6tu5")
 
 [node name="RoadTile154" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("815_kkaeq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile154"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile154"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile154/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jr0pm")
 
 [node name="RoadTile155" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("816_hn474")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile155"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile155"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile155/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_clhe4")
 
 [node name="RoadTile156" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("817_cqjnp")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile156"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile156"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile156/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_trm1r")
 
 [node name="RoadTile157" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("818_oqsbf")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile157"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile157"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile157/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_rw5w1")
 
 [node name="RoadTile158" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("819_nd2y1")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile158"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile158"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile158/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0kthm")
 
 [node name="RoadTile159" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("820_80js8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile159"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile159"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile159/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1yq1f")
 
 [node name="RoadTile160" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10694, 1.19209e-07, 2.11719)
 mesh = ExtResource("821_1de3j")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="RoadTile160"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile160"]
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="RoadTile160/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_fnlw2")
 
 [node name="RoadTile161" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("822_va8b6")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="RoadTile161"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile161"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RoadTile161/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_443p0")
 
 [node name="RoadTile162" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("823_y4tds")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile162"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile162"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile162/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5p076")
 
 [node name="RoadTile163" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("824_8ms4u")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile163"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile163"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile163/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nujis")
 
 [node name="RoadTile164" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("825_31hwy")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile164"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile164"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile164/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gergi")
 
 [node name="RoadTile165" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("826_w3ari")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile165"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile165"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile165/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5ys10")
 
 [node name="RoadTile166" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("827_7t007")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile166"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile166"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile166/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_4j0uj")
 
 [node name="RoadTile167" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("828_dub38")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile167"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile167"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile167/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ff1b8")
 
 [node name="RoadTile168" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("829_mhdy3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile168"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile168"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile168/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g8ytl")
 
 [node name="RoadTile169" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("830_mg6ci")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile169"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile169"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile169/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y1hch")
 
 [node name="RoadTile170" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("831_7is6g")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile170"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile170"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile170/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_3levc")
 
 [node name="RoadTile171" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("832_5o6l1")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile171"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile171"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile171/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xej1y")
 
 [node name="RoadTile172" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01499, 0, 2.07423)
 mesh = ExtResource("833_13lrl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile172"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile172"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile172/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2twwe")
 
 [node name="RoadTile186" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("834_qd6xb")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile186"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile186"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile186/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0e7vj")
 
 [node name="RoadTile187" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("835_xagc6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile187"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile187"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile187/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_c5hik")
 
 [node name="RoadTile188" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("836_ne67f")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile188"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile188"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile188/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xbqv0")
 
 [node name="RoadTile189" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("837_tifnk")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile189"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile189"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile189/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_c8t47")
 
 [node name="RoadTile190" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("838_mdcf7")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile190"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile190"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile190/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nt4sj")
 
 [node name="RoadTile191" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("839_a4plk")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile191"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile191"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile191/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0hgcm")
 
 [node name="RoadTile192" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("840_6ev72")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile192"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile192"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile192/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ur3gb")
 
 [node name="RoadTile193" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("841_gr54c")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile193"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile193"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile193/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gglmw")
 
 [node name="RoadTile194" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("842_giv8c")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile194"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile194"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile194/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5xoao")
 
 [node name="RoadTile195" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("843_6kfse")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile195"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile195"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile195/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_m2ev7")
 
 [node name="RoadTile196" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("844_ooksn")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile196"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile196"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile196/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_e5jtq")
 
 [node name="RoadTile197" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("845_an8xp")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile197"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile197"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile197/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_8cicq")
 
 [node name="RoadTile198" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("846_0b2ex")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile198"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile198"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile198/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_d8xh2")
 
 [node name="RoadTile199" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("847_jeiw5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile199"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile199"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile199/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ylv31")
 
 [node name="RoadTile200" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("848_umyf5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile200"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile200"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile200/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_uaw1k")
 
 [node name="RoadTile201" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("849_m10ss")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile201"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile201"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile201/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_p55ir")
 
 [node name="RoadTile202" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("850_mqr7e")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile202"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile202"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile202/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n74wt")
 
 [node name="RoadTile203" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("851_im2od")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile203"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile203"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile203/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_r3sw5")
 
 [node name="RoadTile204" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("852_w3yaq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile204"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile204"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile204/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qqtio")
 
 [node name="RoadTile205" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("853_ohkhl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile205"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile205"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile205/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_6dbiv")
 
 [node name="RoadTile206" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("854_vwx6l")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile206"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile206"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile206/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_28h2s")
 
 [node name="RoadTile207" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("855_3uqy2")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile207"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile207"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile207/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kh14p")
 
 [node name="RoadTile208" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("856_8dvql")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile208"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile208"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile208/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ytcww")
 
 [node name="RoadTile209" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("857_1wu7e")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile209"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile209"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile209/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_px2ln")
 
 [node name="RoadTile210" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("858_ur2tj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile210"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile210"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile210/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n61se")
 
 [node name="RoadTile211" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("859_hwonr")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile211"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile211"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile211/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_3eg0w")
 
 [node name="RoadTile212" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("860_pjq7b")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile212"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile212"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile212/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_32tx3")
 
 [node name="RoadTile213" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("861_r42mg")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile213"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile213"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile213/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xpedt")
 
 [node name="RoadTile214" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("862_aelg0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile214"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile214"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile214/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_q7vin")
 
 [node name="RoadTile215" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("863_4m1yy")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile215"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile215"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile215/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_tyc4y")
 
 [node name="RoadTile216" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("864_1s78d")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile216"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile216"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile216/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_dwmv1")
 
 [node name="RoadTile217" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("865_j1r4i")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile217"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile217"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile217/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_oi5n2")
 
 [node name="RoadTile218" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("866_hlml0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile218"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile218"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile218/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_iuh0j")
 
 [node name="RoadTile219" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("867_pt48f")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile219"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile219"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile219/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_beudg")
 
 [node name="RoadTile220" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("868_e0v3k")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile220"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile220"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile220/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_e5ias")
 
 [node name="RoadTile221" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("869_ko11c")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile221"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile221"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile221/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0dm1a")
 
 [node name="RoadTile222" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("870_hkvc8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile222"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile222"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile222/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_f4ouh")
 
 [node name="RoadTile223" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("871_dn7ti")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile223"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile223"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile223/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ohv0n")
 
 [node name="RoadTile224" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("872_7olyu")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile224"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile224"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile224/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pi377")
 
 [node name="RoadTile225" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("873_nmo6m")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile225"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile225"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile225/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_25oxg")
 
 [node name="RoadTile226" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("874_q6dok")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile226"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile226"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile226/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7txsw")
 
 [node name="RoadTile227" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("875_uf8lj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile227"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile227"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile227/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wrrva")
 
 [node name="RoadTile228" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("876_te8q8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile228"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile228"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile228/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xsh7q")
 
 [node name="RoadTile229" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("877_5isny")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile229"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile229"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile229/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_3dsj1")
 
 [node name="RoadTile230" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("878_k0bss")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile230"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile230"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile230/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w2btg")
 
 [node name="RoadTile231" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("879_s8unm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile231"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile231"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile231/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_3t3wc")
 
 [node name="RoadTile232" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("880_0cqlb")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile232"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile232"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile232/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ylvon")
 
 [node name="RoadTile233" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("881_mkh2i")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile233"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile233"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile233/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g3aol")
 
 [node name="RoadTile234" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("882_iw0sl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile234"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile234"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile234/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_m26ll")
 
 [node name="RoadTile235" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("883_mva2p")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile235"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile235"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile235/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_11fac")
 
 [node name="RoadTile236" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("884_2crdx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile236"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile236"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile236/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_it3if")
 
 [node name="RoadTile237" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("885_2romh")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile237"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile237"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile237/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_6ng24")
 
 [node name="RoadTile238" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("886_rjsb0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile238"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile238"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile238/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_drsh1")
 
 [node name="RoadTile239" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("887_j6old")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile239"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile239"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile239/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hjctf")
 
 [node name="RoadTile240" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("888_s8617")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile240"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile240"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile240/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2kxmf")
 
 [node name="RoadTile241" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("889_dpcqs")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile241"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile241"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile241/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xr840")
 
 [node name="RoadTile242" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("890_tbk1u")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile242"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile242"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile242/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pk54c")
 
 [node name="RoadTile243" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("891_crapt")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile243"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile243"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile243/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pp1bn")
 
 [node name="RoadTile244" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("892_iolqv")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile244"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile244"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile244/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_okgc3")
 
 [node name="RoadTile245" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("893_gxo33")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile245"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile245"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile245/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_mdggs")
 
 [node name="RoadTile246" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("894_mojn4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile246"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile246"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile246/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_glp2r")
 
 [node name="RoadTile247" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("895_yrohg")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile247"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile247"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile247/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1g3yu")
 
 [node name="RoadTile248" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("896_15svl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile248"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile248"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile248/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ict6d")
 
 [node name="RoadTile249" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("897_xismr")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile249"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile249"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile249/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hs2yq")
 
 [node name="RoadTile250" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("898_na8r8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile250"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile250"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile250/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_u8m85")
 
 [node name="RoadTile251" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("899_tkg5e")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile251"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile251"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile251/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_3niew")
 
 [node name="RoadTile252" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("900_rfehq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile252"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile252"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile252/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ypt00")
 
 [node name="RoadTile253" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("901_11yn4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile253"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile253"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile253/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_k4ogx")
 
 [node name="RoadTile254" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("902_t4ube")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile254"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile254"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile254/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_mfb2t")
 
 [node name="RoadTile255" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("903_kd11l")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile255"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile255"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile255/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_r8mw6")
 
 [node name="RoadTile256" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("904_d0ifd")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile256"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile256"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile256/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_in68i")
 
 [node name="RoadTile257" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("905_atgg3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile257"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile257"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile257/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_fcqjp")
 
 [node name="RoadTile258" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("906_bmvfx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile258"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile258"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile258/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_m00f7")
 
 [node name="RoadTile259" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("907_ug3sc")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile259"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile259"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile259/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5sgfo")
 
 [node name="RoadTile260" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("908_bvnqq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile260"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile260"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile260/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kdc0q")
 
 [node name="RoadTile261" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("909_k5o1w")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile261"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile261"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile261/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n33yp")
 
 [node name="RoadTile262" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("910_odr5n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile262"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile262"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile262/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2jmkc")
 
 [node name="RoadTile263" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("911_ala5n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile263"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile263"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile263/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_epoyv")
 
 [node name="RoadTile264" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("912_y5ma3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile264"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile264"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile264/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wvblk")
 
 [node name="RoadTile265" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("913_ojq3d")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile265"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile265"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile265/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_k1tt3")
 
 [node name="RoadTile266" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("914_c3kpo")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile266"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile266"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile266/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_r0vhy")
 
 [node name="RoadTile267" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("915_sr7dg")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile267"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile267"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile267/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bx8ic")
 
 [node name="RoadTile268" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("916_ut61q")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile268"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile268"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile268/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wtkwy")
 
 [node name="RoadTile269" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("917_xfhfh")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile269"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile269"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile269/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_eb0on")
 
 [node name="RoadTile270" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("918_5dob6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile270"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile270"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile270/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2iufx")
 
 [node name="RoadTile271" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("919_yj07k")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile271"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile271"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile271/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nrjyn")
 
 [node name="RoadTile272" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("920_hawy3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile272"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile272"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile272/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_fgauh")
 
 [node name="RoadTile273" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("921_ofkqg")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile273"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile273"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile273/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w6f2p")
 
 [node name="RoadTile274" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("922_rwxsk")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile274"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile274"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile274/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kl1kn")
 
 [node name="RoadTile275" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("923_8awje")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile275"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile275"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile275/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0oj5t")
 
 [node name="RoadTile276" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("924_snbje")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile276"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile276"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile276/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_6kjek")
 
 [node name="RoadTile277" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("925_0e6vi")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile277"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile277"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile277/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hyhym")
 
 [node name="RoadTile278" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("926_6ojoc")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile278"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile278"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile278/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pcdnx")
 
 [node name="RoadTile279" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("927_6chh2")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile279"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile279"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile279/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_fvxw8")
 
 [node name="RoadTile280" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("928_tai4x")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile280"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile280"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile280/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_4v2t8")
 
 [node name="RoadTile281" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("929_06icq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile281"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile281"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile281/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jcq77")
 
 [node name="RoadTile282" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("930_1a7ac")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile282"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile282"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile282/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7umiv")
 
 [node name="RoadTile283" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("931_i0rxp")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile283"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile283"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile283/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_44x40")
 
 [node name="RoadTile284" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("932_t7rb0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile284"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile284"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile284/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_88fwx")
 
 [node name="RoadTile285" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("933_fv87q")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile285"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile285"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile285/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ue1qy")
 
 [node name="RoadTile286" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("934_8lvfu")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile286"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile286"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile286/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_s1lt3")
 
 [node name="RoadTile287" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.994641, 0, 2.07321)
 mesh = ExtResource("935_nog65")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile287"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RoadTile287"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadTile287/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_u7tw8")
 
 [node name="RoadTile288" type="MeshInstance3D" parent="."]
