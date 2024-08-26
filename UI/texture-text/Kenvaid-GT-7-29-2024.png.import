@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hd0w0g1mt28e"
-path="res://.godot/imported/Kenvaid-GT-7-29-2024.png-d609e980c18dad035c172dc52ae24f2f.ctex"
+path="res://.godot/imported/Kenvaid-GT-7-29-2024.png-f13e13a7c9c4273b51a6253a3e49b45e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/texture-text/Kenvaid-GT-7-29-2024.png"
-dest_files=["res://.godot/imported/Kenvaid-GT-7-29-2024.png-d609e980c18dad035c172dc52ae24f2f.ctex"]
+source_file="res://ui/texture-text/Kenvaid-GT-7-29-2024.png"
+dest_files=["res://.godot/imported/Kenvaid-GT-7-29-2024.png-f13e13a7c9c4273b51a6253a3e49b45e.ctex"]
 
 [params]
 

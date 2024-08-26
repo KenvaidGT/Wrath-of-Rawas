@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgf7hdqeemwhs"
-path="res://.godot/imported/Luna-Slendy-7-29-2024.png-bc161ade1a0d26d2a8338ec4e8b9e81b.ctex"
+path="res://.godot/imported/Luna-Slendy-7-29-2024.png-e0561e4140a60d59f8c311da2946c650.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/texture-text/Luna-Slendy-7-29-2024.png"
-dest_files=["res://.godot/imported/Luna-Slendy-7-29-2024.png-bc161ade1a0d26d2a8338ec4e8b9e81b.ctex"]
+source_file="res://ui/texture-text/Luna-Slendy-7-29-2024.png"
+dest_files=["res://.godot/imported/Luna-Slendy-7-29-2024.png-e0561e4140a60d59f8c311da2946c650.ctex"]
 
 [params]
 
